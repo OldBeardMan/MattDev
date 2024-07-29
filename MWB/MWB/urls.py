@@ -21,4 +21,9 @@ from homepage import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
+    path('oferta/', views.oferta, name='oferta'),
+    path('portfolio/', views.portfolio, name='portfolio'),
+    path('omnie/', views.omnie, name='omnie'),
+    path('faq/', views.FAQ, name='faq'),
+    path('kontakt/', views.kontakt, name='kontakt'),
 ]

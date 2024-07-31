@@ -11040,6 +11040,7 @@ html {
   padding-bottom: 5rem;
   background-color: #4e3b42;
   color: #fff;
+  bottom: 0;
 }
 
 .copyright {

@@ -46,30 +46,33 @@
         <footer class="footer text-center">
             <div class="container">
                 <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Kontakt</h4>
-                        <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
-                        </p>
-                    </div>
                     <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
+                    <div class="col-lg-4 mb-0">
                         <h4 class="text-uppercase mb-4">Kontakt</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                        <div class="contact-info mb-4">
+                            <p><i class="fas fa-envelope"></i> <a href="mailto:example@example.com">example@example.com</a></p>
+                            <p><i class="fas fa-phone"></i> +48 123 456 789</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Obsługujemy całą Polskę</p>
+                        </div>
+                        <div class="social-icons">
+                            <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                        </div>
                     </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <img class="mb-4 img-fluid m-0" src="{% static 'assets/img/mattweblogo.png' %}" alt="..." />
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
+                    
+                    <!-- Footer About Text -->
+                    <div class="col-lg-8 text-center">
+                        <img class="mb-4 img-fluid" src="{% static 'assets/img/mattweblogo.png' %}" alt="..." style="max-height: 150px;">
+                        <p class="lead">
+                            Potrzebujesz kompleksowej usługi stworzenia wizytówki Twojej firmy online? 
+                            Dobrze trafiłeś!
+                        </p>
+                        <p class="lead">
+                            Wszystko od stworzenia strony internetowej, po zaprojektowanie Twojego unikatowego logo
+                            znajdziesz właśnie tutaj! Zobacz <a href="{% url 'portfolio' %}">co już stworzyłem</a> i nie
+                            zastanawiaj się dłużej! Czekam na <a href="{% url 'kontakt' %}"> Twoją wiadomość</a>!
                         </p>
                     </div>
                 </div>

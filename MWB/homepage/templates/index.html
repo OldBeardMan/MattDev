@@ -38,7 +38,7 @@
                         </div>
                         <!-- About Section Content-->
                         <p class="lead text-center">Jestem młodym studentem informatyki na Politechnice Lubelskiej. Od czasów szkoły podstawowej zajmuję się hobbystycznie tworzeniem stron internetowych oraz grafik w Photoshopie. Jako deweloper programuję strony od podstaw, korzystając z nowoczesnych języków i frameworków, takich jak HTML, CSS, JavaScript i Django.</p>
-                        <p class="lead text-center">Oferuję kompleksowe usługi freelancingu, od projektowania stron internetowych, blogów, logotypów, po wizytówki papierowe i inne materiały, które pomogą Twojej firmie wyróżnić się na rynku. Wszystko, czego potrzebujesz, znajdziesz w jednym miejscu!</p>
+                        <p class="lead text-center">Oferuję kompleksowe usługi freelancingu od projektowania stron internetowych, blogów, logotypów po wizytówki papierowe i inne materiały, które pomogą Twojej firmie wyróżnić się na rynku. Wszystko, czego potrzebujesz, znajdziesz w jednym miejscu!</p>
                         <!-- About Section Buttons -->
                         <div class="text-center mt-4">
                             <a class="btn btn-xl btn-outline-light me-3" href="{% url 'portfolio' %}">
@@ -53,11 +53,74 @@
                     </div>
                     <!-- Image Section -->
                     <div class="col-lg-5 text-center">
-                        <img class="img-fluid rounded-circle" src="{% static 'assets/img/ryjec.png' %}" alt="Twoje zdjęcie">
+                        <img class="img-fluid rounded-circle" src="{% static 'assets/img/ryjec.jpg' %}" alt="Twoje zdjęcie">
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Offer Section-->
+<section class="page-section" id="offer">
+    <div class="container">
+        <!-- Offer Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Moja oferta</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Offer Cards-->
+        <div class="row justify-content-center">
+            <!-- Offer Card 1-->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-laptop-code fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Tworzenie stron internetowych</h5>
+                        <hr>
+                        <p class="card-text">Tworzę nowoczesne strony internetowe od podstaw, które będą idealną wizytówką Twojej firmy. 
+                            Dzięki moim stronom Twoja firma będzie wyróżniała się na tle konkurencji! 
+                            Używam nowoczesnych technik programowania responsywnego we frameworku Django, aby zapewnić najwyższą jakość.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#more-info-website" class="btn btn-primary">Sprawdź ofertę!</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Offer Card 2-->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-paint-brush fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Projekty graficzne</h5>
+                        <hr>
+                        <p class="card-text">Oferuję unikatowe projekty graficzne od logo, przez wizytówki, plakaty, aż po inne materiały marketingowe. Zadbam o każdy szczegół i spójność  wizualną, tak aby Twoja firma wyróżniała się na tle konkurencji! 
+                            Pracuję w Photoshopie oraz innych nowoczesnych programach do grafiki komputerowej, aby dostarczyć najlepsze rezultaty.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#more-info-graphic" class="btn btn-primary">Sprawdź ofertę!</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Offer Card 3-->
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-tools fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Opieka nad stroną internetową</h5>
+                        <hr>
+                        <p class="card-text">Zapewniam kompleksową opiekę nad stroną internetową, aby Twoja witryna działała płynnie i była zawsze aktualna. Zajmuję się regularnymi aktualizacjami, monitorowaniem wydajności oraz rozwiązywaniem problemów technicznych, abyś mógł skoncentrować się na prowadzeniu biznesu.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#more-info-maintenance" class="btn btn-primary">Sprawdź ofertę!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
                 <!-- Portfolio Section-->
                 <section class="page-section portfolio" id="portfolio">
@@ -78,7 +141,7 @@
                                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                         <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                                     </div>
-                                    <img class="img-fluid" src="{% static 'assets/img/portfolio/cabin.png' %}" alt="..." />
+                                    <img class="img-fluid" src="{% static 'assets/img/portfolio/mattkrupa.jpg' %}" alt="..." />
                                 </div>
                             </div>
                             <!-- Portfolio Item 2-->

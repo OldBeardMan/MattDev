@@ -126,9 +126,9 @@
                 <section class="page-section bg-secondary  portfolio" id="portfolio">
                     <div class="container">
                         <!-- Portfolio Section Heading-->
-                        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                        <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Portfolio</h2>
                         <!-- Icon Divider-->
-                        <div class="divider-custom">
+                        <div class="divider-custom divider-light">
                             <div class="divider-custom-line"></div>
                             <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                             <div class="divider-custom-line"></div>
@@ -196,7 +196,7 @@
 <section class="page-section bg-primary text-white mb-0" id="testimonials">
     <div class="container">
         <h2 class="page-section-heading text-center text-uppercase text-white">Opinie Klientów</h2>
-        <div class="divider-custom divider-light">
+        <div class="divider-custom">
             <div class="divider-custom-line"></div>
             <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
             <div class="divider-custom-line"></div>
@@ -267,23 +267,23 @@
             <div class="col-lg-8 col-xl-7">
                 <form id="contactForm" method="post" action="{% url 'index' %}">
                     {% csrf_token %}
-                    <div class="form-floating mb-3">
+                    <div class="mb-3">
                         {{ form.name.label_tag }}
                         {{ form.name }}
                         <div class="invalid-feedback" data-sb-feedback="name:required">Imię jest wymagane.</div>
                     </div>
-                    <div class="form-floating mb-3">
+                    <div class="mb-3">
                         {{ form.email.label_tag }}
                         {{ form.email }}
                         <div class="invalid-feedback" data-sb-feedback="email:required">Adres e-mail jest wymagany.</div>
                         <div class="invalid-feedback" data-sb-feedback="email:email">Adres e-mail nie jest prawidłowy.</div>
                     </div>
-                    <div class="form-floating mb-3">
+                    <div class="mb-3">
                         {{ form.phone.label_tag }}
                         {{ form.phone }}
                         <div class="invalid-feedback" data-sb-feedback="phone:required">Numer telefonu jest wymagany.</div>
                     </div>
-                    <div class="form-floating mb-3">
+                    <div class="mb-3">
                         {{ form.message.label_tag }}
                         {{ form.message }}
                         <div class="invalid-feedback" data-sb-feedback="message:required">Wiadomość jest wymagana.</div>
@@ -294,6 +294,7 @@
         </div>
     </div>
 </section>
+
 
 
         <!-- Portfolio Modals-->

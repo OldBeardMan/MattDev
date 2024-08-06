@@ -2,386 +2,323 @@
 
 {% load static %}
 
-{% block title %}Home - MattWebDev{% endblock %}
+{% block title %}Oferta - MattWebDev{% endblock %}
 
 {% block content %}
        
-       <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar" src="{% static 'assets/img/mattweblogo.png' %}" alt="..." />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Matt Web Dev</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Wizytówka Twojej firmy online!</p>
-            </div>
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio/cabin.png' %}" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio/cake.png' %}" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio/circus.png' %}" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio/game.png' %}" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio/safe.png' %}" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="{% static 'assets/img/portfolio/submarine.png' %}" alt="..." />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- Offer Header Section -->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Offer Heading -->
+        <h1 class="masthead-heading text-uppercase mb-0">Nasza Oferta</h1>
+        <!-- Icon Divider -->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Offer Subheading -->
+        <p class="masthead-subheading font-weight-light mb-0">Sprawdź, co możemy dla Ciebie zrobić!</p>
+    </div>
+</header>
 
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{% static 'assets/img/portfolio/cabin.png' %}" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+<!-- Web Development Offer Section -->
+<section class="page-section" id="web-development">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Tworzenie stron internetowych</h2>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- Package Card 1 -->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card h-100 text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Pakiet Podstawowy</h5>
+                    </div>
+                    <div class="card-body">
+                        <i class="fas fa-globe fa-3x mb-3 text-primary"></i>
+                        <h6 class="text-primary">od 900 PLN netto</h6>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-primary"></i> Liczba podstron: 1</li>
+                            <li><i class="fas fa-check text-primary"></i> Panel zarządzania</li>
+                            <li><i class="fas fa-check text-primary"></i> Wersja mobilna</li>
+                            <li><i class="fas fa-check text-primary"></i> Formularz kontaktowy</li>
+                            <li><i class="fas fa-check text-primary"></i> Galeria zdjęć</li>
+                            <li><i class="fas fa-check text-primary"></i> Integracja Google Maps</li>
+                            <li><i class="fas fa-check text-primary"></i> Przygotowanie pod SEO</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#contactForm" class="btn btn-primary">Skontaktuj się</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Package Card 2 -->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card h-100 text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Pakiet Standardowy</h5>
+                    </div>
+                    <div class="card-body">
+                        <i class="fas fa-code fa-3x mb-3 text-primary"></i>
+                        <h6 class="text-primary">od 2000 PLN netto</h6>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-primary"></i> Responsywny design</li>
+                            <li><i class="fas fa-check text-primary"></i> Zaawansowana SEO</li>
+                            <li><i class="fas fa-check text-primary"></i> Do 10 podstron</li>
+                            <li><i class="fas fa-check text-primary"></i> Integracja z mediami społecznościowymi</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#contactForm" class="btn btn-primary">Skontaktuj się</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Package Card 3 -->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card h-100 text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Pakiet Premium</h5>
+                    </div>
+                    <div class="card-body">
+                        <i class="fas fa-star fa-3x mb-3 text-primary"></i>
+                        <h6 class="text-primary">od 3000 PLN netto</h6>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-primary"></i> Responsywny design</li>
+                            <li><i class="fas fa-check text-primary"></i> Profesjonalna SEO</li>
+                            <li><i class="fas fa-check text-primary"></i> Nielimitowana liczba podstron</li>
+                            <li><i class="fas fa-check text-primary"></i> Integracja z e-commerce</li>
+                            <li><i class="fas fa-check text-primary"></i> Wsparcie techniczne przez 6 miesięcy</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#contactForm" class="btn btn-primary">Skontaktuj się</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{% static 'assets/img/portfolio/cake.png' %}" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{% static 'assets/img/portfolio/circus.png' %}" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{% static 'assets/img/portfolio/game.png' %}" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{% static 'assets/img/portfolio/safe.png' %}" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{% static 'assets/img/portfolio/submarine.png' %}" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+</section>
 
-        {% endblock %}
+
+
+<!-- Graphic Design Offer Section -->
+<section class="page-section bg-light text-dark" id="graphic-design">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projekty graficzne</h2>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- Graphic Package Card 1 -->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-palette fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Pakiet Logo</h5>
+                        <hr>
+                        <p class="card-text">Unikalne projekty logo, które będą reprezentować Twoją firmę w najlepszym świetle.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#more-info-logo" class="btn btn-primary">Dowiedz się więcej</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Graphic Package Card 2 -->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-images fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Pakiet Wizytówki</h5>
+                        <hr>
+                        <p class="card-text">Profesjonalne projekty wizytówek, które wyróżnią Twoją firmę.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#more-info-business-cards" class="btn btn-primary">Dowiedz się więcej</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Graphic Package Card 3 -->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-ad fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Pakiet Plakaty</h5>
+                        <hr>
+                        <p class="card-text">Kreatywne projekty plakatów na różne wydarzenia i kampanie marketingowe.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#more-info-posters" class="btn btn-primary">Dowiedz się więcej</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Website Maintenance Offer Section -->
+<section class="page-section" id="website-maintenance">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Zarządzanie stroną internetową</h2>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- Maintenance Package Card 1 -->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-tools fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Pakiet Podstawowy</h5>
+                        <hr>
+                        <p class="card-text">Podstawowa opieka nad stroną internetową, obejmująca regularne aktualizacje i monitorowanie.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#more-info-basic-maintenance" class="btn btn-primary">Dowiedz się więcej</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Maintenance Package Card 2 -->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-shield-alt fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Pakiet Standardowy</h5>
+                        <hr>
+                        <p class="card-text">Rozszerzona opieka nad stroną, w tym dodatkowe funkcje bezpieczeństwa i wsparcie techniczne.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#more-info-standard-maintenance" class="btn btn-primary">Dowiedz się więcej</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Maintenance Package Card 3 -->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-cogs fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Pakiet Premium</h5>
+                        <hr>
+                        <p class="card-text">Kompleksowa opieka nad stroną, obejmująca pełne wsparcie i indywidualne podejście do klienta.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#more-info-premium-maintenance" class="btn btn-primary">Dowiedz się więcej</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="page-section bg-primary text-white" id="why-choose-us">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Dlaczego warto mi zlecić stronę i grafiki</h2>
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 ms-auto"><p class="lead">1. Wieloletnie doświadczenie w branży.</p></div>
+            <div class="col-lg-4 me-auto"><p class="lead">2. Profesjonalne podejście do każdego projektu.</p></div>
+            <div class="col-lg-4 ms-auto"><p class="lead">3. Kreatywność i innowacyjne rozwiązania.</p></div>
+            <div class="col-lg-4 me-auto"><p class="lead">4. Indywidualne podejście do klienta.</p></div>
+            <div class="col-lg-4 ms-auto"><p class="lead">5. Używanie nowoczesnych technologii.</p></div>
+            <div class="col-lg-4 me-auto"><p class="lead">6. Gwarancja satysfakcji i wsparcie po zakończeniu projektu.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- Collaboration Plan Section -->
+<section class="page-section" id="collaboration-plan">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Jak wygląda współpraca</h2>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 ms-auto"><p class="lead">1. Pierwsze spotkanie i omówienie potrzeb klienta.</p></div>
+            <div class="col-lg-4 me-auto"><p class="lead">2. Przygotowanie wstępnego projektu i jego akceptacja.</p></div>
+            <div class="col-lg-4 ms-auto"><p class="lead">3. Tworzenie strony lub projektów graficznych.</p></div>
+            <div class="col-lg-4 me-auto"><p class="lead">4. Weryfikacja i wprowadzenie ewentualnych poprawek.</p></div>
+            <div class="col-lg-4 ms-auto"><p class="lead">5. Finalizacja projektu i publikacja strony.</p></div>
+            <div class="col-lg-4 me-auto"><p class="lead">6. Wsparcie i opieka po zakończeniu projektu.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section-->
+<section class="page-section" id="contact">
+    <div class="container">
+        <!-- Contact Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Skontaktuj się ze mną</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form-->
+        <div class="row justify-content-center">
+            <div class="col-lg-4">
+                <div class="card bg-light mb-3">
+                    <div class="card-body text-center">
+                        <img src="{% static 'assets/img/ryjec2.jpg' %}" class="img-fluid rounded-circle mb-3" alt="Mateusz Krupa">
+                        <h5 class="card-title">Matt Web Dev</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Mateusz Krupa</h6>
+                        <hr>
+                        <p class="card-text"><i class="fas fa-phone"></i> +48 502 836 411</p>
+                        <p class="card-text"><i class="fas fa-envelope"></i> matt@example.com</p>
+                        <div class="social-icons">
+                            <a href="#" class="btn btn-outline-secondary btn-sm"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-outline-secondary btn-sm"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-outline-secondary btn-sm"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-xl-7">
+                <form id="contactForm" method="post" action="{% url 'index' %}">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        {{ form.name.label_tag }}
+                        {{ form.name }}
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Imię jest wymagane.</div>
+                    </div>
+                    <div class="mb-3">
+                        {{ form.email.label_tag }}
+                        {{ form.email }}
+                        <div class="invalid-feedback" data-sb-feedback="email:required">Adres e-mail jest wymagany.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Adres e-mail nie jest prawidłowy.</div>
+                    </div>
+                    <div class="mb-3">
+                        {{ form.phone.label_tag }}
+                        {{ form.phone }}
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">Numer telefonu jest wymagany.</div>
+                    </div>
+                    <div class="mb-3">
+                        {{ form.message.label_tag }}
+                        {{ form.message }}
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Wiadomość jest wymagana.</div>
+                    </div>
+                    <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Wyślij</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

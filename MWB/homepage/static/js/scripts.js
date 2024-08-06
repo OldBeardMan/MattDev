@@ -52,3 +52,9 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+$(document).ready(function(){
+    $('#testimonialCarousel').carousel({
+        interval: 10000 // Ustawienie interwału karuzeli na 10 sekund
+    });
+});

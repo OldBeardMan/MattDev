@@ -19,7 +19,17 @@ def index(request):
     return render(request, 'index.html', context)
 
 def oferta(request):
-    return render(request, 'oferta.html')
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('oferta')
+    else:
+        form = ContactForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'oferta.html', context)
 
 def portfolio(request):
     return render(request, 'portfolio.html')

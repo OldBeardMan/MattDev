@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <!-- Image Section -->
-                    <div class="col-lg-5 text-center">
+                    <div class="col-lg-5 text-center mt-5">
                         <img class="img-fluid rounded-circle" src="{% static 'assets/img/ryjec.jpg' %}" alt="Twoje zdjęcie">
                     </div>
                 </div>
@@ -277,12 +277,12 @@
                 <form id="contactForm" method="post" action="{% url 'index' %}">
                     {% csrf_token %}
                     <div class="mb-3">
-                        {{ form.name.label_tag }}
+                        {{ form.name.label_tag }}<span class="text-danger">*</span>
                         {{ form.name }}
                         <div class="invalid-feedback" data-sb-feedback="name:required">Imię jest wymagane.</div>
                     </div>
                     <div class="mb-3">
-                        {{ form.email.label_tag }}
+                        {{ form.email.label_tag }}<span class="text-danger">*</span>
                         {{ form.email }}
                         <div class="invalid-feedback" data-sb-feedback="email:required">Adres e-mail jest wymagany.</div>
                         <div class="invalid-feedback" data-sb-feedback="email:email">Adres e-mail nie jest prawidłowy.</div>
@@ -293,7 +293,11 @@
                         <div class="invalid-feedback" data-sb-feedback="phone:required">Numer telefonu jest wymagany.</div>
                     </div>
                     <div class="mb-3">
-                        {{ form.message.label_tag }}
+                        {{ form.company.label_tag }}
+                        {{ form.company }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form.message.label_tag }}<span class="text-danger">*</span>
                         {{ form.message }}
                         <div class="invalid-feedback" data-sb-feedback="message:required">Wiadomość jest wymagana.</div>
                     </div>
@@ -302,7 +306,7 @@
             </div>
         </div>
     </div>
-</section>
+    </section>
 
 
 
@@ -325,9 +329,35 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="{% static 'assets/img/portfolio/mattkrupa.jpg' %}" alt="..." />
+                                    <a href="https://www.mattkrupa.net/" target="_blank"><img class="img-fluid rounded mb-5" src="{% static 'assets/img/portfolio/mattkrupa.jpg' %}" alt="..." /></a>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fas fa-file-alt text-primary"></i> Liczba podstron: 11  
+                                            <span class="separator"></span>
+                                            <i class="fas fa-paint-brush text-primary"></i> Wszystkie grafiki zrobione przeze mnie
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-mobile-alt text-primary"></i> Wersja mobilna  
+                                            <span class="separator"></span>
+                                            <i class="fas fa-globe text-primary"></i> Dwie wersje językowe
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-envelope text-primary"></i> Formularz kontaktowy  
+                                            <span class="separator"></span>
+                                            <i class="fas fa-lock text-primary"></i> Certyfikat SSL
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-images text-primary"></i> Galeria zdjęć  
+                                            <span class="separator"></span>
+                                            <i class="fas fa-blog text-primary"></i> Portfolio
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-music text-primary"></i> Odtwarzacz muzyki
+                                        </li>
+                                    </ul>
+                                    
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">Stworzona strona internetowa miała za zadanie zgromadzić całą muzykę artysty w jedno miejsce, a dodatkowe każda z jego piosenek miała mieć krótki opis powstania. Na stronie znalazło się również portfolio artysty, linki do social mediów, platform streamingowych oraz innych projektów muzycznych. Wykonana została w dwóch wersjach językowych: angielskim i polskim z przyciskami do przełączania miedzy nimi. Nowoczesny design i użyte animacje miały na celu odwzorować brzmienie i spójność artystyczną muzyki. Logo, grafiki albumów (również innych projektów muzycznych) zostały wykonane przeze mnie, tak aby wiernie odwzorowały klimat muzyki, którą reprezentują. </p>
                                     <button class="btn btn-primary d-inline" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window

@@ -11000,6 +11000,19 @@ html {
   width: 30rem;
 }
 
+@media (max-width: 768px) {
+  .masthead-avatar {
+      max-width: 80%; /* Mniejsza szerokość na mniejszych ekranach */
+  }
+}
+
+@media (max-width: 480px) {
+  .masthead-avatar {
+      max-width: 60%; /* Jeszcze mniejsza szerokość na bardzo małych ekranach */
+  }
+}
+
+
 @media (min-width: 992px) {
   .masthead {
     padding-top: calc(6rem + 104px);
@@ -11062,4 +11075,9 @@ html {
 
 .copyright {
   background-color: #29293a;
+}
+.separator {
+  border-left: 1px solid #000;
+  height: 1em;
+  margin: 0 10px;
 }

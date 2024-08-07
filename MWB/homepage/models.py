@@ -12,7 +12,8 @@ class Testimonial(models.Model):
 class Contact(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
-    phone = models.CharField(max_length=20)
+    phone = models.CharField(max_length=20,blank=True, null=True)
+    company = models.CharField(max_length=100, blank=True, null=True)
     message = models.TextField()
 
     def __str__(self):

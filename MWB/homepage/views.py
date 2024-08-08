@@ -39,10 +39,24 @@ def portfolio(request):
     return render(request, 'portfolio.html', context)
 
 def omnie(request):
-    return render(request, 'omnie.html')
+    testimonials = Testimonial.objects.all()
+    context = {
+        'testimonials': testimonials
+    }
+    return render(request, 'omnie.html', context)
 
 def FAQ(request):
-    return render(request, 'FAQ.html')
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('oferta')
+    else:
+        form = ContactForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'FAQ.html', context)
 
 def kontakt(request):
     if request.method == 'POST':

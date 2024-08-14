@@ -84,7 +84,7 @@
                             Używam nowoczesnych technik programowania responsywnego we frameworku Django, aby zapewnić najwyższą jakość.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#more-info-website" class="btn btn-primary">Sprawdź ofertę!</a>
+                        <a href="{% url 'oferta' %}" class="btn btn-primary">Sprawdź ofertę!</a>
                     </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@
                             Pracuję w Photoshopie oraz innych nowoczesnych programach do grafiki komputerowej, aby dostarczyć najlepsze rezultaty.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#more-info-graphic" class="btn btn-primary">Sprawdź ofertę!</a>
+                        <a href="{% url 'oferta' %}" class="btn btn-primary">Sprawdź ofertę!</a>
                     </div>
                 </div>
             </div>
@@ -113,7 +113,7 @@
                         <p class="card-text">Zapewniam kompleksową opiekę nad stroną internetową, aby Twoja witryna działała płynnie i była zawsze aktualna. Zajmuję się regularnymi aktualizacjami, monitorowaniem wydajności oraz rozwiązywaniem problemów technicznych, abyś mógł skoncentrować się na prowadzeniu biznesu.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#more-info-maintenance" class="btn btn-primary">Sprawdź ofertę!</a>
+                        <a href="{% url 'oferta' %}" class="btn btn-primary">Sprawdź ofertę!</a>
                     </div>
                 </div>
             </div>
@@ -231,14 +231,16 @@
                             </div>
                             {% endfor %}
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div class="carousel-controls text-center">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -5872,24 +5872,26 @@ textarea.form-control-lg {
   }
 }
 
+.carousel-controls {
+  display: flex;
+  justify-content: center; /* Wyrównanie strzałek do środka */
+  align-items: center;
+  margin-top: 20px; /* Odstęp od karuzeli */
+}
+
 .carousel-control-prev,
 .carousel-control-next {
-  position: absolute;
   top: 0;
   bottom: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15%;
-  padding: 0;
+  z-index: 0;
+  width: 2%;
   color: #fff;
-  text-align: center;
   background: none;
   border: 0;
   opacity: 0.5;
   transition: opacity 0.15s ease;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
   .carousel-control-next {
@@ -5905,12 +5907,12 @@ textarea.form-control-lg {
   opacity: 0.9;
 }
 
-.carousel-control-prev {
-  left: -10%;
-}
-
+.carousel-control-prev,
 .carousel-control-next {
-  right: -10%;
+    position: static; /* Usunięcie pozycjonowania absolutnego */
+    width: auto; /* Możesz dostosować szerokość strzałek */
+    margin: 0 10px; /* Odstęp między strzałkami */
+    opacity: 1; /* Pełna widoczność */
 }
 
 .carousel-control-prev-icon,

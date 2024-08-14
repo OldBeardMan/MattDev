@@ -24,7 +24,7 @@
             <div class="col-lg-8">
                 <p class="lead">Hej, nazywam się Mateusz. Jestem studentem 3 roku informatyki na Politechnice Lubelskiej. Programowaniem insteresuje się od czasów szkoły podstawowej, kiedy to zacząłem robić gry komputerowe w JavaScript i strony internetowe dla moich hobbistycznych projektów.</p>
                 <p class="lead">Moje umiejętności obejmują języki HTML, CSS, JavaScript, Python oraz DJango. Od wielu lat zajmuje się również grafiką komputerową, robiąc plakaty dla znajomych, czy loga różnych stowarzyszeń lokalnych.</p>
-                <p class="lead">Hobbistycznie zajmuje się kompnowaniem, nagrywaniem i wydawanie muzyki pod nazwą <a href="https://mattkrupa.net/">Matt Krupa</a>. Sam projekt jest dla mnie dużą nauką w dziedzienie grafiki komputerowej, jak i programowania. Moje efekty, jak i moją muzykę można posłuchać <a href="https://mattkrupa.net/">tutaj</a>.</p>
+                <p class="lead">Hobbistycznie zajmuje się komponowaniem, nagrywaniem i wydawanie muzyki pod nazwą <a href="https://mattkrupa.net/">Matt Krupa</a>. Sam projekt jest dla mnie dużą nauką w dziedzinie grafiki komputerowej, jak i programowania. Moje efekty, jak i moją muzykę można posłuchać <a href="https://mattkrupa.net/">tutaj</a>.</p>
             </div>
         </div>
     </div>
@@ -76,54 +76,56 @@
     </div>
 </section>
 
-<!-- Testimonials Section -->
-<section class="page-section bg-primary text-white mb-0" id="testimonials">
-    <div class="container">
-        <h2 class="page-section-heading text-center text-uppercase text-white">Opinie Klientów</h2>
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-            <div class="divider-custom-line"></div>
-        </div>
-        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                {% for testimonial in testimonials %}
-                <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                    <div class="card no-border text-dark mb-3">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 d-flex align-items-center justify-content-center">
-                                    <img src="{{ testimonial.image.url }}" class="img-fluid rounded-circle testimonial-image" alt="{{ testimonial.name }}">
-                                </div>
-                                <div class="col-md-9">
-                                    <h5 class="card-title text-white">{{ testimonial.name }}</h5>
-                                    <h6 class="card-subtitle mb-2 text-secondary">{{ testimonial.company }}</h6>
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+           <!-- Testimonials Section -->
+           <section class="page-section bg-primary text-white mb-0" id="testimonials">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-white">Opinie Klientów</h2>
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        {% for testimonial in testimonials %}
+                        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                            <div class="card no-border text-dark mb-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-3 d-flex align-items-center justify-content-center">
+                                            <img src="{{ testimonial.image.url }}" class="img-fluid rounded-circle testimonial-image" alt="{{ testimonial.name }}">
+                                        </div>
+                                        <div class="col-md-9">
+                                            <h5 class="card-title text-white">{{ testimonial.name }}</h5>
+                                            <h6 class="card-subtitle mb-2 text-secondary">{{ testimonial.company }}</h6>
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <p class="card-text text-white">{{ testimonial.content }}</p>
+                                        </div>
                                     </div>
-                                    <p class="card-text text-white">{{ testimonial.content }}</p>
                                 </div>
                             </div>
                         </div>
+                        {% endfor %}
+                    </div>
+                    <div class="carousel-controls text-center">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-                {% endfor %}
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-</section>
+        </section>
 
 <!-- Call to Action-->
 <section class="page-section text-center mt-4">

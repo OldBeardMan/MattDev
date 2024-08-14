@@ -5,8 +5,23 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="description" content="Profesjonalne tworzenie unikalnych stron internetowych od zera oraz kreatywna grafika komputerowa, w tym projektowanie logo. Matt Web Dev - Twoja wizytówka online." />
+        <meta name="keywords" content="strony, internetowe, deweloper, grafika, komputerowa, projektowanie">
+        <meta name="author" content="Mateusz Krupa" />
+        
+            <!-- Open Graph Tags -->
+        <meta property="og:title" content="{% block title %}DUPADUPA{% endblock %}">
+        <meta property="og:description" content="Profesjonalne tworzenie unikalnych stron internetowych od zera oraz kreatywna grafika komputerowa, w tym projektowanie logo. Matt Web Dev - Twoja wizytówka online.">
+        <meta property="og:image" content="https://mattwebdev.pl/static/assets/img/icon.png">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="pl_PL">
+
+        <!-- Twitter Card Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{% block title %}DUPADUPA{% endblock %}">
+        <meta name="twitter:description" content="Profesjonalne tworzenie unikalnych stron internetowych od zera oraz kreatywna grafika komputerowa, w tym projektowanie logo. Matt Web Dev - Twoja wizytówka online.">
+        <meta name="twitter:image" content="https://mattwebdev.pl/static/assets/img/icon.png">
+
         <title>{% block title %}DUPADUPA{% endblock %}</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />

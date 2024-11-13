@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import RegexValidator
 
 class Testimonial(models.Model):
     name = models.CharField(max_length=100)
@@ -12,7 +13,12 @@ class Testimonial(models.Model):
 class Contact(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField()
-    phone = models.CharField(max_length=20,blank=True, null=True)
+    phone = models.CharField(
+        max_length=9,
+        blank=True,
+        null=True,
+        validators=[RegexValidator(r'^\d{9}$', 'Phone number must be exactly 9 digits')]
+    )
     company = models.CharField(max_length=100, blank=True, null=True)
     message = models.TextField()
 

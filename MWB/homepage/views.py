@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 from .models import Testimonial
 from .forms import ContactForm
+from django.urls import reverse
 
 
 def index(request):
@@ -9,7 +11,12 @@ def index(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('index')
+            messages.success(request, 'Formularz został pomyślnie wysłany!')
+            return redirect(f"{reverse('index')}#contact")
+        else:
+            # Ustawienie wiadomości błędu tylko przy niepoprawnym formularzu
+            messages.error(request, 'Wystąpił błąd w formularzu. Sprawdź dane i spróbuj ponownie.')
+            return redirect(f"{reverse('index')}#contact")
     else:
         form = ContactForm()
     context = {
@@ -23,7 +30,12 @@ def oferta(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('oferta')
+            messages.success(request, 'Formularz został pomyślnie wysłany!')
+            return redirect(f"{reverse('oferta')}#contact")
+        else:
+            # Ustawienie wiadomości błędu tylko przy niepoprawnym formularzu
+            messages.error(request, 'Wystąpił błąd w formularzu. Sprawdź dane i spróbuj ponownie.')
+            return redirect(f"{reverse('oferta')}#contact")
     else:
         form = ContactForm()
     context = {
@@ -63,7 +75,12 @@ def kontakt(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('oferta')
+            messages.success(request, 'Formularz został pomyślnie wysłany!')
+            return redirect(f"{reverse('kontakt')}#contact")
+        else:
+            # Ustawienie wiadomości błędu tylko przy niepoprawnym formularzu
+            messages.error(request, 'Wystąpił błąd w formularzu. Sprawdź dane i spróbuj ponownie.')
+            return redirect(f"{reverse('kontakt')}#contact")
     else:
         form = ContactForm()
     context = {

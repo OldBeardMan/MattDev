@@ -35,18 +35,27 @@
                     <h6 class="card-subtitle mb-2 text-muted">Mateusz Krupa</h6>
                     <hr>
                     <p class="card-text"><i class="fas fa-phone"></i> +48 502 836 411</p>
-                    <p class="card-text"><i class="fas fa-envelope"></i> matt@example.com</p>
+                    <p class="card-text"><i class="fas fa-envelope"></i> matt.website.dev@gmail.com</p>
                     <div class="social-icons">
                         <a class="btn btn-outline-secondary btn-sm" href="https://www.facebook.com/mattwebsitedev/"><i class="fab fa-fw fa-facebook-f"></i></a>
                         <a class="btn btn-outline-secondary btn-sm" href="https://www.instagram.com/matt_website_dev"><i class="fab fa-fw fa-instagram"></i></a>
-                        <a class="btn btn-outline-secondary btn-sm" href="https://www.linkedin.com/company/matt-web-dev"><i class="fab fa-fw fa-linkedin-in"></i></a>
                         <a class="btn btn-outline-secondary btn-sm" href="https://github.com/OldBeardMan"><i class="fab fa-fw fa-github"></i></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-8 col-xl-7">
-            <form id="contactForm" method="post" action="{% url 'index' %}">
+            {% if messages %}
+                <div>
+                    {% for message in messages %}
+                        <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        
+            <form id="contactForm" method="post" action="{% url 'kontakt' %}">
                 {% csrf_token %}
                 <div class="mb-3">
                     {{ form.name.label_tag }}<span class="text-danger">*</span>
@@ -76,6 +85,7 @@
                 <button class="btn btn-secondary btn-xl" id="submitButton" type="submit">Wyślij</button>
             </form>
         </div>
+        
     </div>
 </div>
 </section>

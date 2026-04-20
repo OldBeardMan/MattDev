@@ -1,1 +1,139 @@
-<!DOCTYPE html><html lang="en">    <head>        <meta charset="utf-8" />        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />        <meta name="description" content="Profesjonalne tworzenie unikalnych stron internetowych od zera oraz kreatywna grafika komputerowa, w tym projektowanie logo. Matt Web Dev - Twoja wizytówka online." />        <meta name="keywords" content="strony, internetowe, deweloper, grafika, komputerowa, projektowanie">        <meta name="author" content="Mateusz Krupa" />            <!-- Open Graph Tags -->        <meta property="og:description" content="Profesjonalne tworzenie unikalnych stron internetowych od zera oraz kreatywna grafika komputerowa, w tym projektowanie logo. Matt Web Dev - Twoja wizytówka online.">        <meta property="og:image" content="https://mattwebdev.pl/static/assets/img/icon.png">        <meta property="og:type" content="website">        <meta property="og:locale" content="pl_PL">        <!-- Twitter Card Tags -->        <meta name="twitter:card" content="summary_large_image">        <meta name="twitter:description" content="Profesjonalne tworzenie unikalnych stron internetowych od zera oraz kreatywna grafika komputerowa, w tym projektowanie logo. Matt Web Dev - Twoja wizytówka online.">        <meta name="twitter:image" content="https://mattwebdev.pl/static/assets/img/icon.png">        <title>Kontakt - MattWebDev</title>        <!-- Favicon-->        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />        <!-- Font Awesome icons (free version)-->        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>        <!-- Google fonts-->        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />        <!-- Core theme CSS (includes Bootstrap)-->        <link href="css/styles.css" rel="stylesheet" />    </head>    <body id="page-top">        <!-- Navigation-->        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">            <div class="container">                <a class="navbar-brand m-0" href="index.html">                    Matt Web Dev                </a>                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">                    Menu                    <i class="fas fa-bars"></i>                </button>                <div class="collapse navbar-collapse" id="navbarResponsive">                    <ul class="navbar-nav ms-auto">                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="oferta.html">Oferta</a></li>                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="omnie.html">O mnie</a></li>                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="portfolio.html">Portfolio</a></li>                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="faq.html">FAQ</a></li>                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="kontakt.html">Kontakt</a></li>                    </ul>                </div>            </div>        </nav>        <!-- Masthead--><header class="masthead bg-primary text-white text-center">    <div class="container d-flex align-items-center flex-column">        <!-- Masthead Avatar Image-->        <h1 class="masthead-heading text-uppercase mb-0">Kontakt</h1>        <!-- Icon Divider-->        <div class="divider-custom divider-light">            <div class="divider-custom-line"></div>            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>            <div class="divider-custom-line"></div>        </div>        <!-- Masthead Subheading-->        <p class="masthead-subheading font-weight-light mb-0">Masz dla mnie zlecenie? Napisz już dziś po darmową wycenę!</p>    </div></header><!-- Contact Section--><section class="page-section" id="contact"><div class="container">    <!-- Contact Section Form-->    <div class="row justify-content-center">        <div class="col-lg-4">            <div class="card bg-matt mb-3">                <div class="card-body text-center">                    <img src="assets/img/ryjec2.jpg" class="img-fluid rounded-circle mb-3" alt="Mateusz Krupa">                    <h5 class="card-title">Matt Web Dev</h5>                    <h6 class="card-subtitle mb-2 text-muted">Mateusz Krupa</h6>                    <hr>                    <p class="card-text"><i class="fas fa-phone"></i> +48 502 836 411</p>                    <p class="card-text"><i class="fas fa-envelope"></i> matt.website.dev@gmail.com</p>                    <div class="social-icons">                        <a class="btn btn-outline-secondary btn-sm" href="https://www.facebook.com/mattwebsitedev/"><i class="fab fa-fw fa-facebook-f"></i></a>                        <a class="btn btn-outline-secondary btn-sm" href="https://www.instagram.com/matt_website_dev"><i class="fab fa-fw fa-instagram"></i></a>                        <a class="btn btn-outline-secondary btn-sm" href="https://github.com/OldBeardMan"><i class="fab fa-fw fa-github"></i></a>                    </div>                </div>            </div>        </div>        <div class="col-lg-8 col-xl-7">            ">                            {{ message }}                        </div>                    {% endfor %}                </div>            {% endif %}            <form id="contactForm" method="POST" action="https://formspree.io/f/xwpklggk">                <div class="mb-3">                    <label class="form-label">Imię<span class="text-danger">*</span>                    <input type="text" name="name" class="form-control" placeholder="Jan Kowalski" required>                    <div class="invalid-feedback" data-sb-feedback="name:required">Imię jest wymagane.</div>                </div>                <div class="mb-3">                    <label><span class="text-danger">*</span>                    <input type="email" name="email" class="form-control" required>                    <div class="invalid-feedback" data-sb-feedback="email:required">Adres e-mail jest wymagany.</div>                    <div class="invalid-feedback" data-sb-feedback="email:email">Adres e-mail nie jest prawidłowy.</div>                </div>                <div class="mb-3">                    <label>                    <input type="tel" name="phone" class="form-control" placeholder="+48 123 456 789">                    <div class="invalid-feedback" data-sb-feedback="phone:required">Numer telefonu jest wymagany.</div>                </div>                <div class="mb-3">                    <label>                    <input type="text" name="company" class="form-control" placeholder="Nazwa firmy (opcjonalnie)">                </div>                <div class="mb-3">                    <label><span class="text-danger">*</span>                    <textarea name="message" class="form-control" rows="5" placeholder="Twoja wiadomość..." required></textarea>                    <div class="invalid-feedback" data-sb-feedback="message:required">Wiadomość jest wymagana.</div>                </div>                <button class="btn btn-secondary btn-xl" id="submitButton" type="submit">Wyślij</button>            </form>        </div>    </div></div></section>        <!-- Footer-->        <footer class="footer text-center">            <div class="container">                <div class="row">                    <!-- Footer Social Icons-->                    <div class="col-lg-4 mb-0">                        <h4 class="text-uppercase mb-4">Kontakt</h4>                        <div class="contact-info mb-4">                            <p><i class="fas fa-envelope"></i> <a href="mailto:matt.website.dev@gmail.com">matt.website.dev@gmail.com</a></p>                            <p><i class="fas fa-phone"></i> +48 502 836 411</p>                            <p><i class="fas fa-map-marker-alt"></i> Obsługuję całą Polskę</p>                        </div>                        <div class="social-icons">                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/mattwebsitedev/"><i class="fab fa-fw fa-facebook-f"></i></a>                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/matt_website_dev"><i class="fab fa-fw fa-instagram"></i></a>                            <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/OldBeardMan"><i class="fab fa-fw fa-github"></i></a>                        </div>                    </div>                    <!-- Footer About Text -->                    <div class="col-lg-8 text-center">                        <img class="mb-4 img-fluid mt-3" src="assets/img/mattweblogo.png" alt="..." style="max-height: 150px;">                        <p class="lead">                            Potrzebujesz kompleksowej usługi stworzenia wizytówki Twojej firmy online?                            Dobrze trafiłeś!                        </p>                        <p class="lead">                            Wszystko od stworzenia strony internetowej, po zaprojektowanie Twojego unikatowego logo                            znajdziesz właśnie tutaj! Zobacz <a href="portfolio.html">co już stworzyłem</a> i nie                            zastanawiaj się dłużej! Czekam na <a href="kontakt.html"> Twoją wiadomość</a>!                        </p>                    </div>                </div>            </div>        </footer>        <!-- Copyright Section-->        <div class="copyright py-4 text-center text-white">            <div class="container"><small>Copyright &copy; Matt Web Dev 2024</small></div>        </div>        <!-- Bootstrap core JS -->        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>        <!-- Twój własny plik JavaScript -->        <script src="js/scripts.js"></script>    </body></html>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Skontaktuj się z MatIf - usługi informatyczne. Mateusz Krupa - wsparcie IT, strony, aplikacje, domeny, poczta." />
+    <meta name="keywords" content="kontakt, usługi informatyczne, MatIf, Mateusz Krupa, IT">
+    <meta name="author" content="Mateusz Krupa" />
+    <meta property="og:description" content="Skontaktuj się z MatIf - usługi informatyczne. Mateusz Krupa.">
+    <meta property="og:image" content="https://matif.pl/assets/img/icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="Kontakt - MatIf usługi informatyczne. Mateusz Krupa.">
+    <meta name="twitter:image" content="https://matif.pl/assets/img/icon.png">
+    <title>Kontakt - MatIf</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand m-0" href="index.html">MatIf</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="oferta.html">Oferta</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="omnie.html">O mnie</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="faq.html">FAQ</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <h1 class="masthead-heading text-uppercase mb-0">Kontakt</h1>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <p class="masthead-subheading font-weight-light mb-0">Potrzebujesz pomocy IT? Napisz po darmową wycenę!</p>
+        </div>
+    </header>
+
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="card bg-matt mb-3">
+                        <div class="card-body text-center">
+                            <img src="assets/img/ryjec2.jpg" class="img-fluid rounded-circle mb-3" alt="Mateusz Krupa">
+                            <h5 class="card-title">MatIf</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Mateusz Krupa</h6>
+                            <hr>
+                            <p class="card-text"><i class="fas fa-envelope"></i> kontakt@matif.pl</p>
+                            <p class="card-text small text-muted mt-3">Usługi Informatyczne &bdquo;MatIf&rdquo;<br>NIP: 7162851430</p>
+                            <div class="social-icons mt-3">
+                                <a class="btn btn-outline-secondary btn-sm" href="https://www.linkedin.com/in/mateusz-krupa-686998384/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                                <a class="btn btn-outline-secondary btn-sm" href="https://github.com/OldBeardMan"><i class="fab fa-fw fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-xl-7">
+                    <form id="contactForm" method="POST" action="https://formspree.io/f/xwpklggk">
+                        <div class="mb-3">
+                            <label class="form-label">Imię<span class="text-danger">*</span></label>
+                            <input type="text" name="name" class="form-control" placeholder="Jan Kowalski" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">E-mail<span class="text-danger">*</span></label>
+                            <input type="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Firma</label>
+                            <input type="text" name="company" class="form-control" placeholder="Nazwa firmy (opcjonalnie)">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Wiadomość<span class="text-danger">*</span></label>
+                            <textarea name="message" class="form-control" rows="5" placeholder="Opisz czego potrzebujesz..." required></textarea>
+                        </div>
+                        <button class="btn btn-secondary btn-xl" id="submitButton" type="submit">Wyślij</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-0">
+                    <h4 class="text-uppercase mb-4">Kontakt</h4>
+                    <div class="contact-info mb-4">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:kontakt@matif.pl">kontakt@matif.pl</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Obsługuję całą Polskę</p>
+                    </div>
+                    <div class="social-icons">
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/mateusz-krupa-686998384/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/OldBeardMan"><i class="fab fa-fw fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-8 text-center">
+                    <h3 class="mb-3 mt-3">MatIf</h3>
+                    <p class="small text-muted mb-2">Usługi Informatyczne &bdquo;MatIf&rdquo; Mateusz Krupa &bull; NIP: 7162851430</p>
+                    <p class="lead">
+                        Potrzebujesz kompleksowych usług IT dla swojej firmy? Dobrze trafiłeś!
+                    </p>
+                    <p class="lead">
+                        Od wsparcia helpdesk, przez tworzenie stron internetowych, po zaawansowane aplikacje na zamówienie
+                        &mdash; znajdziesz tu wszystko. Zobacz <a href="portfolio.html">moje realizacje</a> i nie
+                        zastanawiaj się dłużej!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; MatIf 2026</small></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

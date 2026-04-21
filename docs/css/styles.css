@@ -11001,16 +11001,27 @@ html {
 .masthead .masthead-avatar {
   width: 30rem;
 }
+.masthead .masthead-logo {
+  max-width: 22rem;
+  width: 100%;
+  height: auto;
+}
 
 @media (max-width: 768px) {
   .masthead-avatar {
       max-width: 80%; /* Mniejsza szerokość na mniejszych ekranach */
+  }
+  .masthead .masthead-logo {
+      max-width: 70%;
   }
 }
 
 @media (max-width: 480px) {
   .masthead-avatar {
       max-width: 60%; /* Jeszcze mniejsza szerokość na bardzo małych ekranach */
+  }
+  .masthead .masthead-logo {
+      max-width: 80%;
   }
 }
 

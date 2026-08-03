@@ -18,3 +18,9 @@ Thumbs.db
 
 # Local development
 .env
+
+# CV i dokumenty osobowe - repo jest publiczne (GitHub Pages),
+# a te pliki zawieraja numer telefonu i prywatny adres e-mail
+*CV*.pdf
+*CV*.md
+Mateusz_Krupa*

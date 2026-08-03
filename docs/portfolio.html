@@ -57,6 +57,97 @@
         </div>
     </header>
 
+    <!-- Aplikacje energetyczne -->
+    <section class="page-section bg-light" id="energy-apps">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Aplikacje energetyczne</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <p class="lead text-center mb-5">Aplikacje stworzone w ramach pracy w sektorze energetycznym &mdash; przy bateryjnych magazynach energii i instalacjach odnawialnego amoniaku. Projekty wewnętrzne, kod źródłowy objęty poufnością.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 text-center bg-white shadow">
+                        <div class="card-body">
+                            <i class="fas fa-battery-full fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Symulator i optymalizator BESS</h5>
+                            <hr>
+                            <p class="card-text">Algorytmy symulacji i optymalizacji pracy bateryjnego magazynu energii (Battery Energy Storage System) &mdash; modelowanie cykli ładowania i rozładowania, analiza wydajności i wsparcie decyzji operacyjnych.</p>
+                            <span class="badge bg-dark">Python</span>
+                            <span class="badge bg-dark">C++</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 text-center bg-white shadow">
+                        <div class="card-body">
+                            <i class="fas fa-flask fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Modele instalacji odnawialnego amoniaku</h5>
+                            <hr>
+                            <p class="card-text">Modele energetyczne instalacji produkcji odnawialnego amoniaku. Obliczenia bilansów energii i optymalizacja pracy instalacji, wykorzystywane przez zespół inżynierski.</p>
+                            <span class="badge bg-dark">Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 text-center bg-white shadow">
+                        <div class="card-body">
+                            <i class="fas fa-gauge-high fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Interfejsy monitoringu na żywo</h5>
+                            <hr>
+                            <p class="card-text">Interfejsy scalające aplikacje do obserwowania pracy magazynu energii w czasie rzeczywistym &mdash; jeden pulpit zbierający dane z wielu systemów.</p>
+                            <span class="badge bg-dark">Python</span>
+                            <span class="badge bg-dark">JavaScript</span>
+                            <span class="badge bg-dark">HTML / CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 text-center bg-white shadow">
+                        <div class="card-body">
+                            <i class="fas fa-cloud-sun-rain fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Pipeline danych pogodowych</h5>
+                            <hr>
+                            <p class="card-text">Skrypty pobierające dane pogodowe z zewnętrznych API i zapisujące je w bazie PostgreSQL &mdash; dane wejściowe do prognoz produkcji i symulacji pracy magazynu.</p>
+                            <span class="badge bg-dark">Python</span>
+                            <span class="badge bg-dark">REST API</span>
+                            <span class="badge bg-dark">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 text-center bg-white shadow">
+                        <div class="card-body">
+                            <i class="fas fa-satellite-dish fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Akwizycja danych z budowy</h5>
+                            <hr>
+                            <p class="card-text">Automatyczne pobieranie danych pomiarowych z terenu budowy instalacji &mdash; zbieranie, walidacja i składowanie pomiarów bez ręcznej pracy zespołu.</p>
+                            <span class="badge bg-dark">Python</span>
+                            <span class="badge bg-dark">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 text-center bg-white shadow">
+                        <div class="card-body">
+                            <i class="fas fa-robot fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Automatyzacja pracy zespołu</h5>
+                            <hr>
+                            <p class="card-text">Aplikacje i skrypty wspierające codzienną pracę zespołu inżynierskiego &mdash; automatyzacja powtarzalnych zadań, przetwarzanie danych i generowanie raportów.</p>
+                            <span class="badge bg-dark">Python</span>
+                            <span class="badge bg-dark">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a class="btn btn-xl btn-outline-primary" href="/omnie#experience"><i class="fas fa-briefcase me-2"></i>Zobacz pełne doświadczenie zawodowe</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Strony internetowe -->
     <section class="page-section bg-secondary portfolio" id="websites">
         <div class="container">
@@ -74,6 +165,16 @@
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
                         <img class="img-fluid" src="assets/img/portfolio/mattkrupa.png" alt="mattkrupa.net" />
+                    </div>
+                </div>
+                <!-- depclean.pl -->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#modalDepclean">
+                        <span class="badge bg-dark position-absolute top-0 end-0 m-2" style="z-index: 2;">Nieaktywna</span>
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/depclean.jpg" alt="depclean.pl" />
                     </div>
                 </div>
             </div>
@@ -108,7 +209,7 @@
                         <!-- PODMIEŃ: dodaj screenshot jako assets/img/portfolio/vibetuner.jpg -->
                         <div class="bg-light d-flex align-items-center justify-content-center" style="height: 250px;">
                             <div class="text-center text-muted">
-                                <i class="fas fa-mobile-alt fa-4x mb-2 text-primary"></i>
+                                <i class="fas fa-face-smile fa-4x mb-2 text-primary"></i>
                                 <h5>Vibe Tuner</h5>
                             </div>
                         </div>
@@ -126,56 +227,6 @@
                                 <i class="fas fa-robot fa-4x mb-2 text-primary"></i>
                                 <h5>Discord Boty</h5>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Aplikacje energetyczne -->
-    <section class="page-section bg-light" id="energy-apps">
-        <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Aplikacje energetyczne</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <p class="lead text-center mb-5">Aplikacje stworzone w ramach pracy w sektorze energetycznym. Projekty wewnętrzne &mdash; kod źródłowy objęty poufnością.</p>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 text-center bg-white shadow">
-                        <div class="card-body">
-                            <i class="fas fa-battery-full fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Symulator BESS</h5>
-                            <hr>
-                            <p class="card-text">Symulator magazynu energii bateryjnej (Battery Energy Storage System). Modelowanie pracy magazynu, symulacja cykli ładowania/rozładowania i analiza wydajności.</p>
-                            <span class="badge bg-dark">Python</span>
-                            <span class="badge bg-dark">C++</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 text-center bg-white shadow">
-                        <div class="card-body">
-                            <i class="fas fa-chart-line fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Optymalizatory</h5>
-                            <hr>
-                            <p class="card-text">Optymalizatory pracy magazynów energii BESS i fabryki odnawialnego amoniaku. Algorytmy optymalizacyjne wspierające podejmowanie decyzji operacyjnych.</p>
-                            <span class="badge bg-dark">Python</span>
-                            <span class="badge bg-dark">C++</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 text-center bg-white shadow">
-                        <div class="card-body">
-                            <i class="fas fa-bolt fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">System zarządzania energią</h5>
-                            <hr>
-                            <p class="card-text">Aplikacja do zarządzania energią (EMS) pobierająca dane energetyczne, monitorująca stan systemów i wspierająca podejmowanie decyzji operacyjnych.</p>
-                            <span class="badge bg-dark">Python</span>
                         </div>
                     </div>
                 </div>
@@ -230,6 +281,43 @@
         </div>
     </div>
 
+    <!-- Modal: depclean.pl -->
+    <div class="portfolio-modal modal fade" id="modalDepclean" tabindex="-1" aria-labelledby="modalDepclean" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">depclean.pl</h2>
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <div class="alert alert-secondary" role="alert">
+                                    <i class="fas fa-circle-info me-2"></i><strong>Strona nie jest już aktywna.</strong> Poniższy zrzut ekranu dokumentuje zrealizowany projekt.
+                                </div>
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/depclean.jpg" alt="depclean.pl" />
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-file-alt text-primary"></i> 5 podstron <span class="separator"></span> <i class="fas fa-mobile-alt text-primary"></i> Wersja mobilna</li>
+                                    <li><i class="fas fa-envelope text-primary"></i> Formularz kontaktowy <span class="separator"></span> <i class="fas fa-lock text-primary"></i> Certyfikat SSL</li>
+                                    <li><i class="fas fa-map text-primary"></i> Interaktywna mapa obszaru usług <span class="separator"></span> <i class="fas fa-circle-question text-primary"></i> Sekcja FAQ</li>
+                                    <li><i class="fas fa-pen-nib text-primary"></i> Blog z panelem administracyjnym <span class="separator"></span> <i class="fas fa-check text-primary"></i> Opinie klientów</li>
+                                    <li><i class="fas fa-server text-primary"></i> Wdrożenie na prywatnym serwerze VPS</li>
+                                </ul>
+                                <p class="mb-4">Serwis dla firmy świadczącej usługi mycia kostki brukowej. Celem projektu było zebranie w jednym miejscu pełnej informacji o firmie: danych kontaktowych, obszaru działalności, zakresu usług, najczęściej zadawanych pytań oraz opinii klientów. Do serwisu dodałem blog z prostym panelem administracyjnym, umożliwiającym właścicielowi samodzielne publikowanie wpisów. Warstwę wizualną przygotowałem tak, aby wkomponowywała się w dostarczone logo, zachowując pełną czytelność treści.</p>
+                                <p class="mb-4">Na prośbę klienta przeprowadziłem krótkie szkolenie z wyboru hostingu i dostawcy domeny, po czym uruchomiłem stronę na prywatnym serwerze VPS.</p>
+                                <button class="btn btn-primary d-inline" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i>Zamknij</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal: Mind of Seasons -->
     <div class="portfolio-modal modal fade" id="modalMindOfSeasons" tabindex="-1" aria-labelledby="modalMindOfSeasons" aria-hidden="true">
         <div class="modal-dialog modal-xl">
@@ -252,7 +340,7 @@
                                     <li><i class="fas fa-volume-up text-primary"></i> System audio i efekty dźwiękowe <span class="separator"></span> <i class="fas fa-desktop text-primary"></i> Interfejs użytkownika</li>
                                     <li><i class="fas fa-code text-primary"></i> Python / Pygame</li>
                                 </ul>
-                                <p class="mb-4">Mind of Seasons to gra 2D o szukaniu zagubionych kotków, inspirowana moją muzyką &mdash; każdy album ożywa jako grywalny świat z własną atmosferą i mechanikami. Gra posiada pełny system zapisu, generowany proceduralnie świat, rozbudowany interfejs użytkownika, system audio z generatorem efektów dźwiękowych oraz system NPC. Projekt, w który włożyłem setki godzin pracy.</p>
+                                <p class="mb-4"><strong>Mind of Seasons</strong> to autorska gra 2D napisana w języku Python z wykorzystaniem biblioteki Pygame. Projekt obejmuje proceduralną generację świata, pełny system zapisu i odczytu stanu gry, rozbudowany interfejs użytkownika, system audio z generatorem efektów dźwiękowych oraz system NPC. Jest to najbardziej złożony z moich projektów autorskich pod względem architektury kodu.</p>
                                 <button class="btn btn-primary d-inline" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i>Zamknij</button>
                                 <a class="btn btn-primary d-inline" href="https://github.com/OldBeardMan/Mind-Of-Seasons" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
                                 <a class="btn btn-primary d-inline" href="https://mattkrupa.net/mind-of-seasons" target="_blank"><i class="fas fa-globe fa-fw"></i>Strona gry</a>
@@ -281,13 +369,13 @@
                                 </div>
                                 <!-- PODMIEŃ: dodaj screenshot jako assets/img/portfolio/vibetuner.jpg i odkomentuj img poniżej -->
                                 <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/vibetuner.jpg" alt="Vibe Tuner" /> -->
-                                <i class="fas fa-mobile-alt fa-5x mb-4 text-primary"></i>
+                                <i class="fas fa-face-smile fa-5x mb-4 text-primary"></i>
                                 <ul class="list-unstyled">
-                                    <li><i class="fas fa-server text-primary"></i> Backend: Python (Flask/FastAPI) <span class="separator"></span> <i class="fas fa-database text-primary"></i> REST API</li>
-                                    <li><i class="fab fa-docker text-primary"></i> Docker <span class="separator"></span> <i class="fas fa-vial text-primary"></i> Testy</li>
-                                    <li><i class="fas fa-graduation-cap text-primary"></i> Praca inżynierska &mdash; Politechnika Lubelska</li>
+                                    <li><i class="fas fa-camera text-primary"></i> Wykrywanie emocji ze zdjęcia twarzy <span class="separator"></span> <i class="fas fa-music text-primary"></i> Dobór muzyki do emocji</li>
+                                    <li><i class="fas fa-clock-rotate-left text-primary"></i> Historia emocji <span class="separator"></span> <i class="fas fa-chart-line text-primary"></i> Analityka emocji w czasie</li>
+                                    <li><i class="fas fa-code text-primary"></i> Python <span class="separator"></span> <i class="fas fa-graduation-cap text-primary"></i> Praca inżynierska &mdash; Politechnika Lubelska</li>
                                 </ul>
-                                <p class="mb-4">Backend aplikacji mobilnej stworzony jako praca inżynierska na Politechnice Lubelskiej. Odpowiadałem za całą część serwerową &mdash; REST API w Pythonie (Flask/FastAPI), konteneryzacja w Dockerze, testy i dokumentacja API. Aplikacja obsługuje logikę biznesową i komunikację z frontendem mobilnym.</p>
+                                <p class="mb-4"><strong>Vibe Tuner</strong> to aplikacja, którą wykonałem jako pracę inżynierską na Politechnice Lubelskiej. Na podstawie zdjęcia twarzy rozpoznaje emocje użytkownika i automatycznie dobiera do nich odpowiednią muzykę. Aplikacja zapisuje historię wykrytych emocji i udostępnia moduł analityczny, który pokazuje, jak nastrój zmieniał się w czasie.</p>
                                 <button class="btn btn-primary d-inline" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i>Zamknij</button>
                                 <a class="btn btn-primary d-inline" href="https://github.com/OldBeardMan/vibe-tuner" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
                             </div>
@@ -343,6 +431,7 @@
                     <h4 class="text-uppercase mb-4">Kontakt</h4>
                     <div class="contact-info mb-4">
                         <p><i class="fas fa-envelope"></i> <a href="mailto:kontakt@matif.pl">kontakt@matif.pl</a></p>
+                        <p><i class="fas fa-phone"></i> <span data-tel="MTE0NjM4MjA1ODQr">&hellip;</span></p>
                         <p><i class="fas fa-map-marker-alt"></i> Obsługuję całą Polskę</p>
                     </div>
                     <div class="social-icons">

@@ -283,7 +283,7 @@
                 </div>
                 <!-- Mind-Of-Seasons -->
                 <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" onclick="window.location.href='/portfolio'">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#modalMindOfSeasons">
                         <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
@@ -376,9 +376,9 @@
                                 <a href="https://www.mattkrupa.net/" target="_blank"><img class="img-fluid rounded mb-5" src="assets/img/portfolio/mattkrupa.png" alt="mattkrupa.net" /></a>
                                 <ul class="list-unstyled">
                                     <li><i class="fas fa-file-alt text-primary"></i> 11 podstron <span class="separator"></span> <i class="fas fa-mobile-alt text-primary"></i> Wersja mobilna</li>
-                                    <li><i class="fas fa-mobile-alt text-primary"></i> Wersja mobilna <span class="separator"></span> <i class="fas fa-lock text-primary"></i> Certyfikat SSL</li>
-                                    <li><i class="fas fa-music text-primary"></i> Odtwarzacz muzyki <span class="separator"></span> <i class="fas fa-images text-primary"></i> Galeria zdjęć</li>
-                                    <li><i class="fas fa-gamepad text-primary"></i> Podstrona gry Mind of Seasons <span class="separator"></span> <i class="fas fa-blog text-primary"></i> Blog z aktualnościami</li>
+                                    <li><i class="fas fa-lock text-primary"></i> Certyfikat SSL <span class="separator"></span> <i class="fas fa-music text-primary"></i> Odtwarzacz muzyki</li>
+                                    <li><i class="fas fa-images text-primary"></i> Galeria zdjęć <span class="separator"></span> <i class="fas fa-blog text-primary"></i> Blog z aktualnościami</li>
+                                    <li><i class="fas fa-gamepad text-primary"></i> Podstrona gry Mind of Seasons</li>
                                 </ul>
                                 <p class="mb-4">Strona muzyczna artysty Matt Krupa, tworzącego muzykę ambientową, elektroniczną i akustyczną. Strona prezentuje albumy, aktualności, blog oraz podstronę gry Mind of Seasons. Kolorowy, autorski design z animacjami. Hostowana na GitHub Pages.</p>
                                 <button class="btn btn-primary d-inline" data-bs-dismiss="modal">
@@ -387,6 +387,36 @@
                                 <button class="btn btn-primary d-inline" onclick="window.open('https://www.mattkrupa.net', '_blank')">
                                     <i class="fas fa-globe fa-fw"></i>Zobacz stronę
                                 </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal - Mind of Seasons -->
+    <div class="portfolio-modal modal fade" id="modalMindOfSeasons" tabindex="-1" aria-labelledby="modalMindOfSeasons" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Mind of Seasons</h2>
+                                <div class="divider-custom"><div class="divider-custom-line"></div></div>
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/mindofseasons.png" alt="Mind of Seasons" />
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-gamepad text-primary"></i> Gra 2D <span class="separator"></span> <i class="fas fa-cat text-primary"></i> Szukanie zagubionych kotków</li>
+                                    <li><i class="fas fa-save text-primary"></i> System zapisu <span class="separator"></span> <i class="fas fa-globe text-primary"></i> Generowany świat</li>
+                                    <li><i class="fas fa-volume-up text-primary"></i> System audio i efekty dźwiękowe <span class="separator"></span> <i class="fas fa-desktop text-primary"></i> Interfejs użytkownika</li>
+                                    <li><i class="fas fa-code text-primary"></i> Python / Pygame</li>
+                                </ul>
+                                <p class="mb-4"><strong>Mind of Seasons</strong> to autorska gra 2D napisana w języku Python z wykorzystaniem biblioteki Pygame. Projekt obejmuje proceduralną generację świata, pełny system zapisu i odczytu stanu gry, rozbudowany interfejs użytkownika, system audio z generatorem efektów dźwiękowych oraz system NPC. Jest to najbardziej złożony z moich projektów autorskich pod względem architektury kodu.</p>
+                                <button class="btn btn-primary d-inline" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i>Zamknij</button>
+                                <a class="btn btn-primary d-inline" href="https://github.com/OldBeardMan/Mind-Of-Seasons" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+                                <a class="btn btn-primary d-inline" href="https://mattkrupa.net/mind-of-seasons" target="_blank"><i class="fas fa-globe fa-fw"></i>Strona gry</a>
                             </div>
                         </div>
                     </div>

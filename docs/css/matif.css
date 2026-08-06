@@ -1,0 +1,936 @@
+/* ==========================================================================
+   MatIf - warstwa marki
+   Wczytywana PO styles.css (bundle Bootstrap 5.2.3 + Freelancer).
+   Paleta bazowa zostala podmieniona w styles.css; tutaj jest cala
+   autorska typografia, uklad i komponenty. Bundle'a nie ruszamy poza kolorami.
+   ========================================================================== */
+
+:root {
+  --ink:          #101828;  /* najciemniejszy grafit: navbar, stopka */
+  --ink-deeper:   #0B1020;  /* pasek copyright */
+  --navy:         #1B2A4A;  /* ciemne sekcje */
+  --navy-soft:    #24365C;  /* obramowania i podzialy na ciemnym tle */
+  --amber:        #c8952f;  /* akcent: CTA, ikony, podkreslenia */
+  --amber-bright: #E0B457;  /* akcent na ciemnym tle (linki w stopce) */
+  --amber-text:   #8C6318;  /* akcent jako tekst na bialym - kontrast 5.3:1 */
+  --surface:      #F6F7F9;  /* jasne tlo sekcji */
+  --line:         #E2E6ED;  /* obramowania na jasnym tle */
+  --text:         #1F2430;
+  --muted:        #5A6377;
+
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.05);
+  --shadow-md: 0 4px 16px rgba(16, 24, 40, 0.08);
+  --shadow-lg: 0 18px 40px rgba(16, 24, 40, 0.14);
+}
+
+/* --------------------------------------------------------------------------
+   1. Typografia
+   -------------------------------------------------------------------------- */
+
+body {
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  letter-spacing: -0.015em;
+  line-height: 1.22;
+}
+
+/* Naglowki sekcji: bez krzyku - mniejszy stopien, bez wersalikow */
+.page-section .page-section-heading,
+.portfolio-modal .portfolio-modal-title {
+  font-size: 1.875rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+@media (min-width: 992px) {
+  .page-section .page-section-heading,
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 2.375rem;
+    line-height: 1.15;
+  }
+}
+
+/* Nadnaglowek - mala wersalikowa etykieta nad H1/H2 */
+.eyebrow {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--amber);
+  margin-bottom: 0.9rem;
+}
+.eyebrow-dark { color: var(--amber-text); }
+
+/* Akapity wprowadzajace: czytelne, nie wychudzone (Bootstrap daje 300) */
+.lead {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--muted);
+}
+.text-white .lead,
+.bg-secondary .lead,
+.masthead .lead,
+.footer .lead {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/* Wycentrowany akapit wprowadzajacy musi miec ograniczona szerokosc -
+   wycentrowany tekst na 1140px jest praktycznie nieczytelny. */
+.lead-narrow {
+  max-width: 46rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a { text-decoration-thickness: 1px; text-underline-offset: 0.15em; }
+
+/* --------------------------------------------------------------------------
+   2. Separator sekcji - zamiast gwiazdki z szablonu
+   Markup .divider-custom zostaje (jest w 6 plikach), zmienia sie tylko wyglad:
+   jedna waska bursztynowa kreska.
+   -------------------------------------------------------------------------- */
+
+.divider-custom {
+  margin: 1.1rem 0 1.75rem;
+}
+/* Uwaga: nie ":last-child" - po wyczyszczeniu markupu zostaje JEDNA kreska,
+   ktora jest jednoczesnie first- i last-child. Selektor rodzenstwa ukrywa
+   tylko nadmiarowa kreske w blokach, ktore jej jeszcze maja dwie. */
+.divider-custom .divider-custom-icon,
+.divider-custom .divider-custom-line + .divider-custom-line {
+  display: none;
+}
+.divider-custom .divider-custom-line:first-child {
+  margin-right: 0;
+  max-width: 3.25rem;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--amber);
+}
+.divider-custom.divider-light .divider-custom-line:first-child {
+  background-color: var(--amber);
+}
+/* wariant wyrownany do lewej (naglowki stron, hero) */
+.divider-custom.divider-start { justify-content: flex-start; }
+
+/* --------------------------------------------------------------------------
+   3. Nawigacja
+   -------------------------------------------------------------------------- */
+
+#mainNav {
+  background-color: var(--ink) !important;
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 1.15rem;
+    padding-bottom: 1.15rem;
+    transition: padding 0.25s ease, background-color 0.25s ease;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    background-color: rgba(16, 24, 40, 0.97) !important;
+    backdrop-filter: saturate(140%) blur(6px);
+  }
+}
+
+/* Logotyp MatIf (wariant na ciemne tlo) + podpis z zakresem dzialalnosci */
+#mainNav .navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  text-decoration: none;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#mainNav .navbar-brand .brand-logo {
+  display: block;
+  height: 1.55rem;
+  width: auto;
+}
+#mainNav .navbar-brand .brand-tag {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.5625rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.52);
+  margin-top: 0.35rem;
+}
+@media (min-width: 992px) {
+  #mainNav.navbar-shrink .navbar-brand .brand-mark { font-size: 1.3rem; }
+  #mainNav.navbar-shrink .navbar-brand .brand-tag { display: none; }
+}
+
+#mainNav .navbar-nav { align-items: center; }
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  color: rgba(255, 255, 255, 0.74);
+  position: relative;
+  border-radius: 0 !important;
+  transition: color 0.18s ease;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:hover,
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #fff;
+  background: transparent !important;
+}
+/* podkreslenie akcentem zamiast turkusowej pigulki */
+@media (min-width: 992px) {
+  #mainNav .navbar-nav li.nav-item a.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0.55rem;
+    height: 2px;
+    background-color: var(--amber);
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+  }
+  #mainNav .navbar-nav li.nav-item a.nav-link:hover::after,
+  #mainNav .navbar-nav li.nav-item a.nav-link.active::after {
+    transform: scaleX(1);
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus {
+    background: transparent !important;
+    color: #fff;
+  }
+}
+
+/* CTA w pasku nawigacji.
+   Selektory musza byc tak samo szczegolowe jak reguly .nav-link powyzej -
+   inaczej wygrywa tamto "background: transparent !important" i przycisk
+   znika przy najechaniu. */
+#mainNav .navbar-nav li.nav-item a.nav-link.nav-cta {
+  margin-left: 0.9rem;
+  padding: 0.55rem 1.15rem !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink) !important;
+  background: var(--amber) !important;
+  border-radius: 4px !important;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link.nav-cta::after { display: none !important; }
+#mainNav .navbar-nav li.nav-item a.nav-link.nav-cta:hover,
+#mainNav .navbar-nav li.nav-item a.nav-link.nav-cta:focus,
+#mainNav .navbar-nav li.nav-item a.nav-link.nav-cta:active {
+  color: var(--ink) !important;
+  background: var(--amber-bright) !important;
+}
+@media (max-width: 991.98px) {
+  #mainNav .navbar-nav li.nav-item a.nav-link.nav-cta {
+    display: inline-block;
+    margin: 0.75rem 0 0.25rem;
+  }
+}
+
+#mainNav .navbar-toggler {
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  padding: 0.55rem 0.85rem;
+}
+
+/* --------------------------------------------------------------------------
+   4. Przyciski
+   -------------------------------------------------------------------------- */
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+              background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.btn:active { transform: translateY(1px); }
+
+/* Bursztyn wymaga ciemnego tekstu - bialy dawalby kontrast 2.7:1 */
+.btn-primary {
+  --bs-btn-color: var(--ink);
+  --bs-btn-hover-color: var(--ink);
+  --bs-btn-active-color: var(--ink);
+  --bs-btn-disabled-color: var(--ink);
+  --bs-btn-hover-bg: #E0B457;
+  --bs-btn-hover-border-color: #E0B457;
+}
+.btn-primary:hover { box-shadow: var(--shadow-md); }
+
+.btn-outline-light:hover { color: var(--ink); }
+
+/* Bursztynowy tekst na jasnym tle wymaga ciemniejszego wariantu (2.7:1 -> 5.3:1).
+   Obramowanie moze zostac w pelnym bursztynie. */
+.btn-outline-primary {
+  --bs-btn-color: var(--amber-text);
+  --bs-btn-border-color: var(--amber);
+  --bs-btn-hover-color: var(--ink);
+  --bs-btn-hover-bg: var(--amber);
+  --bs-btn-hover-border-color: var(--amber);
+  --bs-btn-active-color: var(--ink);
+  --bs-btn-disabled-color: var(--amber-text);
+  --bs-btn-disabled-border-color: var(--amber);
+}
+.btn-outline-secondary {
+  --bs-btn-hover-color: #fff;
+}
+
+.btn-xl {
+  padding: 0.9rem 1.7rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.btn-lg {
+  padding: 0.85rem 1.6rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.btn-social {
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   5. Hero (strona glowna)
+   -------------------------------------------------------------------------- */
+
+.masthead {
+  background: linear-gradient(160deg, #0E1626 0%, var(--navy) 55%, #22355C 100%);
+  position: relative;
+  overflow: hidden;
+}
+/* delikatna siatka techniczna - zamiast plaskiej plamy koloru */
+.masthead::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 70% at 70% 30%, #000 0%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 70% 30%, #000 0%, transparent 75%);
+  pointer-events: none;
+}
+.masthead > .container { position: relative; z-index: 1; }
+
+.masthead-hero {
+  padding-top: calc(4.5rem + 74px);
+  padding-bottom: 4.5rem;
+  text-align: left;
+}
+@media (min-width: 992px) {
+  .masthead-hero {
+    padding-top: calc(5.5rem + 104px);
+    padding-bottom: 5.5rem;
+  }
+}
+
+.hero-heading {
+  font-size: 2.125rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.14;
+  margin-bottom: 1.25rem;
+}
+@media (min-width: 768px)  { .hero-heading { font-size: 2.75rem; } }
+@media (min-width: 1200px) { .hero-heading { font-size: 3.25rem; } }
+
+.hero-lead {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 34em;
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Pasek zaufania - konkrety zamiast obietnic */
+.hero-facts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  padding-top: 1.5rem;
+  display: grid;
+  gap: 0.7rem;
+}
+.hero-facts li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+.hero-facts li i {
+  color: var(--amber);
+  font-size: 0.9rem;
+  margin-top: 0.32rem;
+  flex-shrink: 0;
+  width: 1rem;
+  text-align: center;
+}
+
+/* Portret w hero: prostokat z ramka, nie kolko - czyta sie bardziej firmowo */
+.hero-portrait {
+  margin: 0;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--ink);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: var(--shadow-lg);
+  max-width: 25rem;
+}
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero-portrait figcaption {
+  padding: 1rem 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  background-color: rgba(11, 16, 32, 0.9);
+}
+.hero-portrait figcaption strong {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #fff;
+}
+.hero-portrait figcaption span {
+  display: block;
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+  color: var(--amber);
+  margin-top: 0.15rem;
+}
+@media (min-width: 992px) {
+  .hero-portrait { margin-left: auto; }
+}
+
+/* --------------------------------------------------------------------------
+   6. Naglowek podstrony (oferta / o mnie / portfolio / faq / kontakt)
+   -------------------------------------------------------------------------- */
+
+.masthead-page {
+  padding-top: calc(3.25rem + 74px);
+  padding-bottom: 3.25rem;
+  text-align: left;
+}
+@media (min-width: 992px) {
+  .masthead-page {
+    padding-top: calc(4rem + 104px);
+    padding-bottom: 4rem;
+  }
+}
+.masthead-page .masthead-heading {
+  font-size: 2rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  .masthead-page .masthead-heading { font-size: 2.875rem; }
+}
+.masthead-page .masthead-subheading {
+  font-size: 1.0625rem;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 46em;
+  margin-bottom: 0;
+}
+.masthead-page .divider-custom { justify-content: flex-start; }
+
+/* --------------------------------------------------------------------------
+   7. Sekcje
+   -------------------------------------------------------------------------- */
+
+.page-section { padding: 5rem 0; }
+@media (min-width: 992px) { .page-section { padding: 6rem 0; } }
+
+/* jasne sekcje na przemian biel / neutralne tlo */
+.section-surface { background-color: var(--surface); }
+
+/* ciemne sekcje (bg-secondary z szablonu). Gorna krawedz jest po to, by granica
+   miedzy gradientem hero i plaskim granatem czytala sie jako celowa. */
+.page-section.bg-secondary {
+  background-color: var(--navy) !important;
+  border-top: 1px solid var(--navy-soft);
+}
+
+/* --------------------------------------------------------------------------
+   8. Karty
+   -------------------------------------------------------------------------- */
+
+.card {
+  --bs-card-border-color: var(--line);
+  --bs-card-border-radius: 8px;
+  --bs-card-spacer-x: 1.75rem;
+  --bs-card-spacer-y: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  line-height: 1.35;
+}
+.card-text {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.card .card-body > hr { display: none; }
+.card-footer {
+  background-color: transparent;
+  border-top: 1px solid var(--line);
+  padding: 1rem 1.75rem;
+}
+
+/* Karty uslug na stronie glownej: ikona w kwadracie, tekst do lewej,
+   zamiast szesciu wypelnionych przyciskow - link ze strzalka. */
+#offer .card,
+.service-card {
+  text-align: left !important;
+}
+#offer .card:hover,
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: #CBD3E0;
+}
+/* Granatowy kwadrat z bursztynowa ikona - bursztynowy kafelek na jasnym tle
+   sekcji byl praktycznie niewidoczny. */
+#offer .card .card-body > i,
+.service-card .card-body > i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 6px;
+  background-color: var(--navy);
+  color: var(--amber) !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 1.35rem !important;
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+#offer .card:hover .card-body > i,
+.service-card:hover .card-body > i {
+  background-color: var(--amber);
+  color: var(--ink) !important;
+}
+#offer .card-footer .btn,
+.service-card .card-footer .btn {
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-color: var(--amber-text);
+  --bs-btn-hover-color: var(--ink);
+  --bs-btn-active-color: var(--ink);
+  padding: 0;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+#offer .card-footer .btn::after,
+.service-card .card-footer .btn::after {
+  content: "\2192";
+  display: inline-block;
+  margin-left: 0.45rem;
+  transition: transform 0.18s ease;
+}
+#offer .card-footer .btn:hover::after,
+.service-card .card-footer .btn:hover::after {
+  transform: translateX(4px);
+}
+
+/* Karta z danymi / faktami */
+.fact-card {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.04);
+  padding: 1.75rem;
+}
+.fact-card dl { margin: 0; }
+.fact-card dt {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--amber);
+}
+.fact-card dd {
+  margin: 0.3rem 0 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+.fact-card dd:last-child { margin-bottom: 0; }
+
+/* --------------------------------------------------------------------------
+   8b. Ikony
+   Bursztyn #C8952F na bialym ma kontrast 2.7:1, wiec jako drobny glif na
+   jasnym tle uzywamy ciemniejszego wariantu (5.3:1). Pelny bursztyn zostaje
+   tam, gdzie tlo jest ciemne.
+   -------------------------------------------------------------------------- */
+
+.text-primary { color: var(--amber-text) !important; }
+.bg-secondary .text-primary,
+.masthead .text-primary,
+.footer .text-primary,
+.text-white .text-primary { color: var(--amber) !important; }
+
+/* Duze ikony nad opisami sekcji: glif w kaflu, zamiast samotnej ozdoby */
+.page-section i.fa-4x,
+.page-section i.fa-5x {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 8px;
+  background-color: var(--navy);
+  color: var(--amber) !important;
+  font-size: 1.75rem !important;
+  /* w kontenerze flex-column (karta) text-align nie dziala - kafel trzeba
+     wysrodkowac na osi poprzecznej, inaczej przykleja sie do lewej */
+  align-self: center;
+}
+/* na granatowej sekcji granatowy kafel byłby niewidoczny */
+.page-section.bg-secondary i.fa-4x,
+.page-section.bg-secondary i.fa-5x {
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+/* ...ale biala karta na granatowej sekcji potrzebuje z powrotem granatowego kafla */
+.page-section.bg-secondary .card i.fa-4x,
+.page-section.bg-secondary .card i.fa-5x {
+  background-color: var(--navy);
+  border: 0;
+}
+
+/* Srednie ikony - stonowane, bez kafla. Plusy na kafelkach portfolio
+   sa wykluczone, bo maja wlasny styl w warstwie hover. */
+.page-section i.fa-3x:not(.fa-plus) {
+  font-size: 1.9rem !important;
+  color: var(--amber-text) !important;
+}
+.page-section.bg-secondary i.fa-3x:not(.fa-plus) {
+  color: var(--amber) !important;
+}
+
+/* --------------------------------------------------------------------------
+   9. Portfolio
+   -------------------------------------------------------------------------- */
+
+.portfolio .portfolio-item {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow-md);
+}
+.portfolio .portfolio-item .portfolio-item-caption {
+  background-color: rgba(16, 24, 40, 0.86);
+}
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+.portfolio-modal .portfolio-modal-title { color: var(--navy) !important; }
+
+/* --------------------------------------------------------------------------
+   10. Formularz
+   -------------------------------------------------------------------------- */
+
+.form-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+.form-control {
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.9375rem;
+  background-color: #fff;
+}
+.form-control:focus {
+  border-color: var(--amber);
+  box-shadow: 0 0 0 3px rgba(200, 149, 47, 0.18);
+}
+.form-control::placeholder { color: #9AA3B2; }
+
+/* --------------------------------------------------------------------------
+   10b. Cennik
+   -------------------------------------------------------------------------- */
+
+.pricing {
+  margin-top: 3.5rem;
+}
+.pricing-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.pricing-subheading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  margin: 2.25rem 0 1rem;
+}
+
+/* Tabela: bez pionowych linii i pasków - tylko cienkie poziome podziały,
+   zeby czytalo sie jak cennik, a nie jak arkusz. */
+.pricing-table {
+  margin-bottom: 0;
+  border-color: var(--line);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.pricing-table thead th {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.72);
+  background-color: var(--navy);
+  border-bottom: 0;
+  padding: 0.9rem 1.15rem;
+  white-space: nowrap;
+}
+.pricing-table tbody th,
+.pricing-table tbody td {
+  padding: 0.95rem 1.15rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+.pricing-table tbody th {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: var(--text);
+  white-space: nowrap;
+}
+.pricing-table tbody td { color: var(--muted); }
+.pricing-table tbody tr:last-child th,
+.pricing-table tbody tr:last-child td { border-bottom: 0; }
+.pricing-table tbody tr:hover th,
+.pricing-table tbody tr:hover td { background-color: var(--surface); }
+
+/* kolumna z cena: wyrownana do prawej, wyrozniona */
+.pricing-table .price-col {
+  text-align: right;
+  white-space: nowrap;
+}
+.pricing-table tbody td.price-col {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: var(--amber-text);
+}
+
+/* wariant dla tabeli dodatkow - bez naglowka, wezsza */
+.pricing-table-sm tbody th,
+.pricing-table-sm tbody td { padding: 0.7rem 1.15rem; }
+
+.pricing-note {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--muted);
+  margin: 1rem 0 0;
+}
+
+/* Obramowanie na opakowaniu, nie na tabeli - inaczej zaokraglenie sie rozjezdza.
+   Zawezone do .pricing, zeby nie ruszac innych tabel. */
+.pricing .table-responsive {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  background-color: #fff;
+}
+
+/* Na telefonie trzy kolumny sie nie mieszcza: "Zakres" zwija sie w pionowa
+   wstazke, a cena wychodzi za krawedz. Dlatego kazdy wiersz staje sie blokiem:
+   nazwa pakietu, pod nia zakres, na koncu cena. */
+@media (max-width: 575.98px) {
+  .pricing-table thead { display: none; }
+  .pricing-table,
+  .pricing-table tbody,
+  .pricing-table tr,
+  .pricing-table tbody th,
+  .pricing-table tbody td {
+    display: block;
+    width: 100%;
+  }
+  .pricing-table tbody tr {
+    padding: 1.1rem 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .pricing-table tbody tr:last-child { border-bottom: 0; }
+  .pricing-table tbody th,
+  .pricing-table tbody td {
+    padding: 0;
+    border-bottom: 0;
+    white-space: normal;
+  }
+  .pricing-table tbody th { margin-bottom: 0.3rem; }
+  .pricing-table tbody td.price-col {
+    text-align: left;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .pricing-table tbody tr:hover th,
+  .pricing-table tbody tr:hover td { background-color: transparent; }
+}
+
+/* --------------------------------------------------------------------------
+   11. Timeline / stack (podstrona "O mnie")
+   -------------------------------------------------------------------------- */
+
+.timeline .timeline-date { color: var(--amber-text); }
+.bg-secondary .timeline .timeline-date,
+.timeline.timeline-light .timeline-date { color: var(--amber); }
+.timeline .timeline-role { color: var(--muted); font-style: normal; font-weight: 500; }
+.bg-secondary .timeline .timeline-role { color: rgba(255, 255, 255, 0.72); }
+
+.stack-group h3 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+}
+.stack-group .badge {
+  border: 1px solid var(--line);
+  background-color: var(--surface) !important;
+  color: var(--text) !important;
+  border-radius: 4px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   12. Stopka
+   -------------------------------------------------------------------------- */
+
+.footer {
+  background-color: var(--ink);
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  text-align: left;
+}
+.footer h4, .footer h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 1.25rem;
+}
+.footer p, .footer li {
+  font-size: 0.9375rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+.footer .lead { font-size: 0.9375rem; line-height: 1.7; }
+.footer a {
+  color: var(--amber-bright);
+  text-decoration: none;
+}
+.footer a:hover { color: #fff; text-decoration: underline; }
+.footer .contact-info p { display: flex; align-items: flex-start; gap: 0.6rem; }
+.footer .contact-info i { color: var(--amber); margin-top: 0.35rem; width: 1rem; text-align: center; }
+.footer .footer-logo { max-width: 9.5rem; height: auto; margin-bottom: 1.25rem; }
+.footer .footer-legal {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+.footer .btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.85);
+}
+.footer .btn-outline-light:hover {
+  background-color: var(--amber);
+  border-color: var(--amber);
+  color: var(--ink);
+}
+
+.copyright {
+  background-color: var(--ink-deeper);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.copyright small { color: rgba(255, 255, 255, 0.45); font-size: 0.8125rem; }
+
+/* --------------------------------------------------------------------------
+   13. Karta kontaktowa (dawne .bg-matt)
+   -------------------------------------------------------------------------- */
+
+.bg-matt {
+  background-color: var(--surface) !important;
+  border: 1px solid var(--line);
+}
+.bg-matt .card-title {
+  font-size: 1.25rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.bg-matt img.rounded-circle {
+  width: 6.5rem;
+  height: 6.5rem;
+  object-fit: cover;
+  border-radius: 6px !important;
+}
+.bg-matt .card-text { color: var(--text); }
+.bg-matt .card-text i { color: var(--amber-text); width: 1rem; }

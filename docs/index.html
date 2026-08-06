@@ -19,6 +19,8 @@
     <link rel="canonical" href="https://matif.pl/">
     <title>Usługi Informatyczne MatIf - Mateusz Krupa</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <meta name="theme-color" content="#101828" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -31,9 +33,8 @@
                 "description": "Kompleksowe usługi informatyczne - wsparcie IT, helpdesk, tworzenie stron internetowych, aplikacje na zamówienie, domeny, poczta, sieci komputerowe.",
                 "url": "https://matif.pl/",
                 "image": "https://matif.pl/assets/img/icon.jpg",
-                "logo": "https://matif.pl/assets/img/mattweblogo.png",
+                "logo": "https://matif.pl/assets/img/matif-logo-dark.png",
                 "email": "kontakt@matif.pl",
-                "vatID": "PL7162851430",
                 "taxID": "7162851430",
                 "areaServed": {
                     "@type": "Country",
@@ -73,17 +74,22 @@
         ]
     }
     </script>
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/matif.css" rel="stylesheet" />
 </head>
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand m-0" href="/">MatIf</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand m-0" href="/" aria-label="MatIf - strona główna">
+                <img class="brand-logo" src="assets/img/matif-logo-light.png" alt="MatIf" width="600" height="177" />
+                <span class="brand-tag">Usługi informatyczne</span>
+            </a>
+            <button class="navbar-toggler text-uppercase font-weight-bold text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -93,99 +99,100 @@
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/portfolio">Portfolio</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/faq">FAQ</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/kontakt">Kontakt</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link nav-cta" href="/kontakt">Bezpłatna wycena</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <img class="img-fluid masthead-logo mb-0" src="assets/img/mattweblogo.png" alt="MatIf" />
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
+    <header class="masthead masthead-hero text-white">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-7">
+                    <p class="eyebrow">Usługi informatyczne dla firm</p>
+                    <h1 class="hero-heading">Kompleksowa obsługa IT<br class="d-none d-md-inline" />dla Twojej firmy</h1>
+                    <p class="hero-lead">
+                        Wsparcie helpdesk, sieci komputerowe, domeny i poczta, strony internetowe
+                        oraz aplikacje na zamówienie. Jeden dostawca zamiast pięciu - i bezpośredni
+                        kontakt do inżyniera, który zna Twoją infrastrukturę.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary btn-lg" href="/kontakt">Bezpłatna konsultacja</a>
+                        <a class="btn btn-outline-light btn-lg" href="/oferta">Zobacz ofertę</a>
+                    </div>
+                    <ul class="hero-facts">
+                        <li><i class="fas fa-user-graduate"></i>Inżynier informatyki, Politechnika Lubelska</li>
+                        <li><i class="fas fa-industry"></i>Doświadczenie w sektorze energetycznym</li>
+                        <li><i class="fas fa-map-marker-alt"></i>Obsługa zdalna na terenie całej Polski</li>
+                        <li><i class="fas fa-file-invoice"></i>Działalność zarejestrowana, NIP 7162851430</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <figure class="hero-portrait">
+                        <img src="assets/img/ryjec.jpg" alt="Mateusz Krupa, właściciel MatIf" width="600" height="600" />
+                        <figcaption>
+                            <strong>Mateusz Krupa</strong>
+                            <span>Właściciel &middot; Specjalista IT</span>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
-            <p class="masthead-subheading font-weight-light mb-0">Kompleksowe usługi informatyczne</p>
         </div>
     </header>
 
     <!-- About Section-->
     <section class="page-section bg-secondary text-white mb-0" id="about">
         <div class="container">
-            <div class="row">
+            <div class="row gy-5">
                 <div class="col-lg-7">
-                    <h2 class="page-section-heading text-center text-white">Twój partner w świecie IT</h2>
-                    <div class="divider-custom divider-light">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                        <div class="divider-custom-line"></div>
-                    </div>
-                    <p class="lead text-center">Nazywam się Mateusz Krupa. Jestem <strong>inżynierem informatyki</strong> (Politechnika Lubelska) i specjalistą IT z doświadczeniem w sektorze energetycznym. Programuję w języku Python &mdash; algorytmy symulacji i optymalizacji magazynów energii, modele instalacji odnawialnego amoniaku, automatyzacja procesów oraz aplikacje wspierające pracę zespołów. Równolegle administruję infrastrukturą IT: platforma Microsoft 365, serwery Linux, sieci komputerowe i wsparcie techniczne.</p>
-                    <p class="lead text-center">Oferuję kompleksowe usługi informatyczne &mdash; od wsparcia helpdesk i konfiguracji domen, przez tworzenie stron internetowych, po budowanie zaawansowanych aplikacji na zamówienie. Wszystko, czego Twoja firma potrzebuje w zakresie IT, znajdziesz w jednym miejscu!</p>
-                    <div class="text-center mt-4">
-                        <a class="btn btn-xl btn-outline-light me-3" href="/portfolio">
-                            <i class="fas fa-briefcase me-2"></i>Portfolio
-                        </a>
-                        <a class="btn btn-xl btn-outline-light" href="/omnie">
-                            <i class="fas fa-user me-2"></i>O mnie
-                        </a>
+                    <p class="eyebrow">Kto za tym stoi</p>
+                    <h2 class="page-section-heading text-white">Inżynier, nie infolinia</h2>
+                    <div class="divider-custom divider-light divider-start"><div class="divider-custom-line"></div></div>
+                    <p class="lead">Nazywam się Mateusz Krupa. Jestem <strong>inżynierem informatyki</strong> (Politechnika Lubelska) i specjalistą IT z doświadczeniem w sektorze energetycznym. Programuję w języku Python - algorytmy symulacji i optymalizacji magazynów energii, modele instalacji odnawialnego amoniaku, automatyzacja procesów oraz aplikacje wspierające pracę zespołów. Równolegle administruję infrastrukturą IT: platforma Microsoft 365, serwery Linux, sieci komputerowe i wsparcie techniczne.</p>
+                    <p class="lead">Oferuję kompleksowe usługi informatyczne - od wsparcia helpdesk i konfiguracji domen, przez tworzenie stron internetowych, po budowanie zaawansowanych aplikacji na zamówienie. Zamiast koordynować kilku dostawców, rozmawiasz z jedną osobą, która odpowiada za całość.</p>
+                    <div class="hero-actions mt-4">
+                        <a class="btn btn-xl btn-outline-light" href="/portfolio">Zobacz realizacje</a>
+                        <a class="btn btn-xl btn-outline-light" href="/omnie">Pełne doświadczenie</a>
                     </div>
                 </div>
-                <div class="col-lg-5 text-center mt-5">
-                    <img class="img-fluid rounded-circle" src="assets/img/ryjec.jpg" alt="Mateusz Krupa">
+                <div class="col-lg-5">
+                    <div class="fact-card">
+                        <dl>
+                            <dt>Wykształcenie</dt>
+                            <dd>Inżynier informatyki, Politechnika Lubelska</dd>
+                            <dt>Specjalizacja</dt>
+                            <dd>Administracja IT, automatyzacja i rozwój aplikacji</dd>
+                            <dt>Technologie</dt>
+                            <dd>Python &middot; Microsoft 365 &middot; Linux &middot; sieci komputerowe &middot; HTML/CSS/JS</dd>
+                            <dt>Forma współpracy</dt>
+                            <dd>Zlecenia jednorazowe, projekty oraz stała opieka abonamentowa</dd>
+                            <dt>Zasięg</dt>
+                            <dd>Wsparcie zdalne na terenie całej Polski</dd>
+                        </dl>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Offer Section-->
-    <section class="page-section" id="offer">
+    <section class="page-section section-surface" id="offer">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Moja oferta</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
+            <p class="eyebrow eyebrow-dark text-center">Zakres usług</p>
+            <h2 class="page-section-heading text-center text-secondary mb-0">Sześć obszarów, jeden dostawca</h2>
+            <div class="divider-custom"><div class="divider-custom-line"></div></div>
             <div class="row justify-content-center g-4">
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 text-center">
                         <div class="card-body">
-                            <i class="fas fa-headset fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Wsparcie IT / Helpdesk</h5>
+                            <i class="fas fa-code fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Aplikacje na zamówienie</h5>
                             <hr>
-                            <p class="card-text">Zdalne i lokalne wsparcie techniczne dla Twojej firmy. Rozwiązuję problemy z komputerami, oprogramowaniem i sprzętem. Helpdesk dostępny dla pracowników &mdash; szybko i profesjonalnie.</p>
+                            <p class="card-text">Tworzę dedykowane aplikacje webowe, desktopowe i mobilne. Systemy zarządzania, automatyzacja procesów, integracje API, optymalizatory - wszystko szyte na miarę.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="/oferta#helpdesk" class="btn btn-primary">Sprawdź ofertę!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 text-center">
-                        <div class="card-body">
-                            <i class="fas fa-at fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Domeny i poczta e-mail</h5>
-                            <hr>
-                            <p class="card-text">Rejestracja i konfiguracja domen, ustawienie profesjonalnej poczty firmowej (Google Workspace, Microsoft 365 lub własny serwer). Zarządzanie DNS i certyfikaty SSL.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="/oferta#domeny-poczta" class="btn btn-primary">Sprawdź ofertę!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 text-center">
-                        <div class="card-body">
-                            <i class="fas fa-network-wired fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Sieci komputerowe</h5>
-                            <hr>
-                            <p class="card-text">Projektowanie, konfiguracja i zarządzanie sieciami komputerowymi. Konfiguracja routerów, switchy, VPN, firewalli oraz monitorowanie infrastruktury sieciowej.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="/oferta#sieci" class="btn btn-primary">Sprawdź ofertę!</a>
+                            <a href="/oferta#aplikacje" class="btn btn-primary">Szczegóły usługi</a>
                         </div>
                     </div>
                 </div>
@@ -198,20 +205,20 @@
                             <p class="card-text">Tworzę nowoczesne strony internetowe od podstaw, które będą idealną wizytówką Twojej firmy. Responsywne, szybkie i zoptymalizowane pod SEO.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="/oferta#web-development" class="btn btn-primary">Sprawdź ofertę!</a>
+                            <a href="/oferta#web-development" class="btn btn-primary">Szczegóły usługi</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 text-center">
                         <div class="card-body">
-                            <i class="fas fa-code fa-3x mb-3 text-primary"></i>
-                            <h5 class="card-title">Aplikacje na zamówienie</h5>
+                            <i class="fas fa-at fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Domeny i poczta e-mail</h5>
                             <hr>
-                            <p class="card-text">Tworzę dedykowane aplikacje webowe, desktopowe i mobilne. Systemy zarządzania, automatyzacja procesów, integracje API, optymalizatory &mdash; wszystko szyte na miarę.</p>
+                            <p class="card-text">Rejestracja i konfiguracja domen, ustawienie profesjonalnej poczty firmowej (Google Workspace, Microsoft 365 lub własny serwer). Zarządzanie DNS i certyfikaty SSL.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="/oferta#aplikacje" class="btn btn-primary">Sprawdź ofertę!</a>
+                            <a href="/oferta#domeny-poczta" class="btn btn-primary">Szczegóły usługi</a>
                         </div>
                     </div>
                 </div>
@@ -224,7 +231,33 @@
                             <p class="card-text">Kompleksowa opieka nad stronami, serwerami i infrastrukturą IT. Monitorowanie, aktualizacje, kopie zapasowe, naprawy błędów i wsparcie techniczne.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="/oferta#opieka" class="btn btn-primary">Sprawdź ofertę!</a>
+                            <a href="/oferta#opieka" class="btn btn-primary">Szczegóły usługi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-network-wired fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Sieci komputerowe</h5>
+                            <hr>
+                            <p class="card-text">Projektowanie, konfiguracja i zarządzanie sieciami komputerowymi. Konfiguracja routerów, switchy, VPN, firewalli oraz monitorowanie infrastruktury sieciowej.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="/oferta#sieci" class="btn btn-primary">Szczegóły usługi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-headset fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Wsparcie IT / Helpdesk</h5>
+                            <hr>
+                            <p class="card-text">Zdalne i lokalne wsparcie techniczne dla Twojej firmy. Rozwiązuję problemy z komputerami, oprogramowaniem i sprzętem. Helpdesk dostępny dla pracowników - szybko i profesjonalnie.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="/oferta#helpdesk" class="btn btn-primary">Szczegóły usługi</a>
                         </div>
                     </div>
                 </div>
@@ -235,12 +268,9 @@
     <!-- Portfolio Section-->
     <section class="page-section bg-secondary portfolio" id="portfolio">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Wybrane realizacje</h2>
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
+            <p class="eyebrow text-center">Portfolio</p>
+            <h2 class="page-section-heading text-center text-white mb-0">Wybrane realizacje</h2>
+            <div class="divider-custom divider-light"><div class="divider-custom-line"></div></div>
             <div class="row justify-content-center">
                 <!-- mattkrupa.net -->
                 <div class="col-md-6 col-lg-4 mb-5">
@@ -283,12 +313,13 @@
     <!-- Contact Section-->
     <section class="page-section" id="contact">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Skontaktuj się ze mną</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
+            <p class="eyebrow eyebrow-dark text-center">Kontakt</p>
+            <h2 class="page-section-heading text-center text-secondary mb-0">Zapytaj o wycenę</h2>
+            <div class="divider-custom"><div class="divider-custom-line"></div></div>
+            <p class="lead text-center lead-narrow mb-5">
+                Opisz krótko, czego potrzebujesz. Odpowiadam w ciągu jednego dnia roboczego
+                - z konkretnym zakresem prac i wyceną, bez zobowiązań.
+            </p>
             <div class="row justify-content-center">
                 <div class="col-lg-4">
                     <div class="card bg-matt mb-3">
@@ -324,7 +355,7 @@
                             <label class="form-label">Wiadomość<span class="text-danger">*</span></label>
                             <textarea name="message" class="form-control" rows="5" placeholder="Twoja wiadomość..." required></textarea>
                         </div>
-                        <button class="btn btn-secondary btn-xl" id="submitButton" type="submit">Wyślij</button>
+                        <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Wyślij wiadomość</button>
                     </form>
                 </div>
             </div>
@@ -340,12 +371,8 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">mattkrupa.net</h2>
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
+                                <h2 class="portfolio-modal-title text-secondary mb-0">mattkrupa.net</h2>
+                                <div class="divider-custom"><div class="divider-custom-line"></div></div>
                                 <a href="https://www.mattkrupa.net/" target="_blank"><img class="img-fluid rounded mb-5" src="assets/img/portfolio/mattkrupa.png" alt="mattkrupa.net" /></a>
                                 <ul class="list-unstyled">
                                     <li><i class="fas fa-file-alt text-primary"></i> 11 podstron <span class="separator"></span> <i class="fas fa-mobile-alt text-primary"></i> Wersja mobilna</li>
@@ -369,32 +396,38 @@
     </div>
 
     <!-- Footer-->
-    <footer class="footer text-center">
+    <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-0">
-                    <h4 class="text-uppercase mb-4">Kontakt</h4>
-                    <div class="contact-info mb-4">
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:kontakt@matif.pl">kontakt@matif.pl</a></p>
-                        <p><i class="fas fa-phone"></i> <span data-tel="MTE0NjM4MjA1ODQr">&hellip;</span></p>
-                        <p><i class="fas fa-map-marker-alt"></i> Obsługuję całą Polskę</p>
-                    </div>
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <img class="footer-logo" src="assets/img/matif-logo-light.png" alt="MatIf" width="600" height="177" />
+                    <p class="footer-legal mb-4">
+                        Usługi Informatyczne &bdquo;MatIf&rdquo; Mateusz Krupa<br />
+                        NIP: 7162851430
+                    </p>
                     <div class="social-icons">
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/mateusz-krupa-686998384/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/OldBeardMan"><i class="fab fa-fw fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social me-2" href="https://www.linkedin.com/in/mateusz-krupa-686998384/" aria-label="LinkedIn"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://github.com/OldBeardMan" aria-label="GitHub"><i class="fab fa-fw fa-github"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-8 text-center">
-                    <h3 class="mb-3 mt-3">MatIf</h3>
-                    <p class="small text-muted mb-2">Usługi Informatyczne &bdquo;MatIf&rdquo; Mateusz Krupa &bull; NIP: 7162851430</p>
-                    <p class="lead">
-                        Potrzebujesz kompleksowych usług IT dla swojej firmy? Dobrze trafiłeś!
-                    </p>
-                    <p class="lead">
-                        Od wsparcia helpdesk, przez tworzenie stron internetowych, po zaawansowane aplikacje na zamówienie
-                        &mdash; znajdziesz tu wszystko. Zobacz <a href="/portfolio">moje realizacje</a> i
-                        <a href="/kontakt">napisz do mnie</a>!
-                    </p>
+                <div class="col-lg-4 col-md-6">
+                    <h4>Kontakt</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:kontakt@matif.pl">kontakt@matif.pl</a></p>
+                        <p><i class="fas fa-phone"></i> <span data-tel="MTE0NjM4MjA1ODQr">&hellip;</span></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Obsługa zdalna na terenie całej Polski</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4>Zakres usług</h4>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="/oferta#aplikacje">Aplikacje na zamówienie</a></li>
+                        <li><a href="/oferta#web-development">Strony internetowe</a></li>
+                        <li><a href="/oferta#domeny-poczta">Domeny i poczta e-mail</a></li>
+                        <li><a href="/oferta#opieka">Opieka i utrzymanie IT</a></li>
+                        <li><a href="/oferta#sieci">Sieci komputerowe</a></li>
+                        <li><a href="/oferta#helpdesk">Wsparcie IT i helpdesk</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

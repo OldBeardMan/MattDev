@@ -19,6 +19,8 @@
     <link rel="canonical" href="https://matif.pl/omnie">
     <title>O mnie - Mateusz Krupa - MatIf</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <meta name="theme-color" content="#101828" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -59,17 +61,22 @@
         ]
     }
     </script>
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/matif.css" rel="stylesheet" />
 </head>
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand m-0" href="/">MatIf</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand m-0" href="/" aria-label="MatIf - strona główna">
+                <img class="brand-logo" src="assets/img/matif-logo-light.png" alt="MatIf" width="600" height="177" />
+                <span class="brand-tag">Usługi informatyczne</span>
+            </a>
+            <button class="navbar-toggler text-uppercase font-weight-bold text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -79,29 +86,26 @@
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/portfolio">Portfolio</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/faq">FAQ</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/kontakt">Kontakt</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link nav-cta" href="/kontakt">Bezpłatna wycena</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <h1 class="masthead-heading text-center text-uppercase text-secondary mb-0">O Mnie</h1>
+    <header class="masthead masthead-page text-white">
+        <div class="container">
+            <h1 class="masthead-heading">O mnie</h1>
             <p class="masthead-subheading font-weight-light mb-0 mt-3">Inżynier informatyki &bull; Programista Python &bull; Specjalista IT</p>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
+            <div class="divider-custom"><div class="divider-custom-line"></div></div>
             <div class="row align-items-center">
                 <div class="col-lg-4 text-center">
                     <img class="rounded-circle mb-4" src="assets/img/ryjec.jpg" alt="Mateusz Krupa" style="max-width: 100%; height: auto;">
                 </div>
                 <div class="col-lg-8 text-start">
-                    <p class="lead"><strong>Mateusz Krupa</strong> &mdash; inżynier informatyki, programista Python i specjalista IT. Programowaniem zajmuję się od czasów szkoły podstawowej, kiedy tworzyłem pierwsze gry w języku JavaScript, publikowane na własnej stronie zbudowanej w HTML-u i CSS-ie. W kolejnych latach realizowałem coraz bardziej złożone projekty aplikacji i serwisów internetowych.</p>
+                    <p class="lead"><strong>Mateusz Krupa</strong> - inżynier informatyki, programista Python i specjalista IT. Programowaniem zajmuję się od czasów szkoły podstawowej, kiedy tworzyłem pierwsze gry w języku JavaScript, publikowane na własnej stronie zbudowanej w HTML-u i CSS-ie. W kolejnych latach realizowałem coraz bardziej złożone projekty aplikacji i serwisów internetowych.</p>
                     <p class="lead">W <strong>2026 roku uzyskałem tytuł inżyniera na Politechnice Lubelskiej</strong>. W trakcie studiów tworzyłem aplikacje w języku Python oraz realizowałem komercyjne zlecenia na budowę stron internetowych.</p>
-                    <p class="lead">Zawodowo łączę dwa obszary kompetencji. Pierwszy to <strong>programowanie</strong> &mdash; algorytmy symulacyjne i optymalizacyjne, modele energetyczne, automatyzacja procesów oraz aplikacje wspierające pracę zespołów inżynierskich. Drugi to <strong>administracja infrastrukturą IT</strong> &mdash; platforma Microsoft 365, serwery Linux, sieci komputerowe i wsparcie techniczne w skali całej organizacji.</p>
+                    <p class="lead">Zawodowo łączę dwa obszary kompetencji. Pierwszy to <strong>programowanie</strong> - algorytmy symulacyjne i optymalizacyjne, modele energetyczne, automatyzacja procesów oraz aplikacje wspierające pracę zespołów inżynierskich. Drugi to <strong>administracja infrastrukturą IT</strong> - platforma Microsoft 365, serwery Linux, sieci komputerowe i wsparcie techniczne w skali całej organizacji.</p>
                     <p class="lead">Doświadczenie zdobywałem w <strong>sektorze energetycznym</strong>, przy projektach bateryjnych magazynów energii oraz instalacji produkcji odnawialnego amoniaku. Równolegle prowadzę własną działalność gospodarczą <strong>Usługi Informatyczne &bdquo;MatIf&rdquo;</strong>, w ramach której realizuję projekty webowe i wsparcie IT dla firm.</p>
                 </div>
             </div>
@@ -111,18 +115,14 @@
     <!-- Umiejętności -->
     <section class="page-section" id="skills">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Moje kompetencje</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
+            <h2 class="page-section-heading text-center text-secondary mb-0">Moje kompetencje</h2>
+            <div class="divider-custom"><div class="divider-custom-line"></div></div>
             <div class="row">
                 <div class="col-lg-3 text-center mb-5">
                     <div class="feature-item">
                         <i class="fas fa-code fa-4x text-primary mb-4"></i>
                         <h3 class="h5 mb-3">Programowanie</h3>
-                        <p class="text-muted">Język Python jako podstawowe narzędzie pracy &mdash; algorytmy, modele obliczeniowe i automatyzacja procesów. Technologie webowe: Django, JavaScript, HTML, CSS.</p>
+                        <p class="text-muted">Język Python jako podstawowe narzędzie pracy - algorytmy, modele obliczeniowe i automatyzacja procesów. Technologie webowe: Django, JavaScript, HTML, CSS.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 text-center mb-5">
@@ -150,7 +150,7 @@
 
             <div class="row justify-content-center mt-4">
                 <div class="col-lg-10">
-                    <h3 class="h4 text-uppercase text-secondary text-center mb-5">Stack technologiczny</h3>
+                    <h3 class="h4 text-secondary text-center mb-5">Stack technologiczny</h3>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="stack-group">
@@ -210,28 +210,24 @@
     </section>
 
     <!-- Doświadczenie -->
-    <section class="page-section bg-primary text-white" id="experience">
+    <section class="page-section bg-secondary text-white" id="experience">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Doświadczenie</h2>
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
+            <h2 class="page-section-heading text-center text-white mb-0">Doświadczenie</h2>
+            <div class="divider-custom divider-light"><div class="divider-custom-line"></div></div>
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <div class="timeline timeline-light">
 
                         <div class="timeline-item">
-                            <span class="timeline-date text-white">2026 &ndash; obecnie</span>
+                            <span class="timeline-date text-white">2026 - obecnie</span>
                             <h3 class="h4 timeline-title"><i class="fas fa-industry me-2"></i>Hynfra</h3>
                             <p class="timeline-role text-white-50">Specjalista IT / Programista</p>
                             <p><strong>Programowanie i automatyzacja</strong></p>
                             <ul>
                                 <li>Tworzenie <strong>modeli energetycznych instalacji odnawialnego amoniaku</strong> w Pythonie</li>
-                                <li><strong>Analiza danych w języku Python</strong> &mdash; przetwarzanie i interpretacja danych pomiarowych oraz procesowych</li>
+                                <li><strong>Analiza danych w języku Python</strong> - przetwarzanie i interpretacja danych pomiarowych oraz procesowych</li>
                                 <li>Automatyzacja pracy i budowa aplikacji wspierających zespół inżynierski</li>
-                                <li>Tworzenie automatyzacji procesów biznesowych w <strong>Microsoft Power Automate</strong> &mdash; przepływy pracy integrujące usługi platformy Microsoft 365</li>
+                                <li>Tworzenie automatyzacji procesów biznesowych w <strong>Microsoft Power Automate</strong> - przepływy pracy integrujące usługi platformy Microsoft 365</li>
                                 <li>Skrypty automatycznie pobierające dane pomiarowe z terenu budowy instalacji</li>
                                 <li>Projektowanie i utrzymanie baz danych PostgreSQL</li>
                             </ul>
@@ -242,7 +238,7 @@
                                 <li>Tworzenie stron internetowych na platformie WIX</li>
                                 <li>Zarządzanie zakupem licencji i sprzętu</li>
                                 <li>Zarządzanie repozytoriami na GitHubie</li>
-                                <li>Wykorzystanie i <strong>zarządzanie narzędziami AI</strong> w organizacji &mdash; dobór rozwiązań, konfiguracja dostępów i wsparcie użytkowników</li>
+                                <li>Wykorzystanie i <strong>zarządzanie narzędziami AI</strong> w organizacji - dobór rozwiązań, konfiguracja dostępów i wsparcie użytkowników</li>
                             </ul>
                             <div>
                                 <span class="badge bg-dark">Python</span>
@@ -256,14 +252,14 @@
                         </div>
 
                         <div class="timeline-item">
-                            <span class="timeline-date text-white">2025 &ndash; 2026</span>
+                            <span class="timeline-date text-white">2025 - 2026</span>
                             <h3 class="h4 timeline-title"><i class="fas fa-battery-full me-2"></i>Hynfra Energy Storage</h3>
-                            <p class="timeline-role text-white-50">Specjalista IT / Programista</p>
+                            <p class="timeline-role text-white-50">Młodszy specjalista ds. Analizy Danych</p>
                             <p><strong>Programowanie</strong></p>
                             <ul>
                                 <li>Algorytmy w Pythonie do <strong>symulacji i optymalizacji pracy bateryjnego magazynu energii (BESS)</strong></li>
                                 <li>Skrypty pobierające dane pogodowe z API i zapisujące je w bazie PostgreSQL</li>
-                                <li><strong>Analiza danych w języku Python</strong> &mdash; przetwarzanie danych pomiarowych i pogodowych oraz analiza wyników symulacji</li>
+                                <li><strong>Analiza danych w języku Python</strong> - przetwarzanie danych pomiarowych i pogodowych oraz analiza wyników symulacji</li>
                                 <li>Projektowanie interfejsów scalających aplikacje do obserwacji pracy baterii na żywo (Python, HTML, CSS, JavaScript)</li>
                             </ul>
                             <p><strong>Administracja IT</strong></p>
@@ -272,7 +268,7 @@
                                 <li><strong>Migracja użytkowników między tenantami Microsoft 365</strong></li>
                                 <li>Wsparcie techniczne, zarządzanie zakupem licencji i sprzętu</li>
                                 <li>Zarządzanie repozytoriami na GitHubie, tworzenie stron na platformie WIX</li>
-                                <li>Wykorzystanie i <strong>zarządzanie narzędziami AI</strong> w organizacji &mdash; dobór rozwiązań, konfiguracja dostępów i wsparcie użytkowników</li>
+                                <li>Wykorzystanie i <strong>zarządzanie narzędziami AI</strong> w organizacji - dobór rozwiązań, konfiguracja dostępów i wsparcie użytkowników</li>
                                 <li><strong>Prowadzenie szkoleń</strong> ze środowiska GitHub oraz z narzędzi AI</li>
                             </ul>
                             <div>
@@ -287,9 +283,9 @@
                         </div>
 
                         <div class="timeline-item">
-                            <span class="timeline-date text-white">2024 &ndash; obecnie</span>
+                            <span class="timeline-date text-white">2024 - obecnie</span>
                             <h3 class="h4 timeline-title"><i class="fas fa-laptop-code me-2"></i>Usługi Informatyczne &bdquo;MatIf&rdquo;</h3>
-                            <p class="timeline-role text-white-50">Właściciel &mdash; jednoosobowa działalność gospodarcza od marca 2026, wcześniej działalność nierejestrowana</p>
+                            <p class="timeline-role text-white-50">Właściciel - jednoosobowa działalność gospodarcza od marca 2026, wcześniej działalność nierejestrowana</p>
                             <ul>
                                 <li>Od 2024 roku realizacja zleceń w ramach <strong>działalności nierejestrowanej</strong>, od marca 2026 w formie <strong>zarejestrowanej jednoosobowej działalności gospodarczej</strong></li>
                                 <li>Tworzenie stron internetowych na zlecenie we frameworku <strong>Django</strong> oraz w HTML-u, CSS-ie i JavaScripcie</li>
@@ -307,9 +303,9 @@
                         </div>
 
                         <div class="timeline-item">
-                            <span class="timeline-date text-white">2024 &ndash; 2025</span>
+                            <span class="timeline-date text-white">2024 - 2025</span>
                             <h3 class="h4 timeline-title"><i class="fas fa-chalkboard-user me-2"></i>Giganci Programowania</h3>
-                            <p class="timeline-role text-white-50">Prowadzący zajęcia</p>
+                            <p class="timeline-role text-white-50">Nauczyciel programowania</p>
                             <ul>
                                 <li>Prowadzenie zajęć dla dzieci z podstaw programowania</li>
                                 <li>Nauczanie w środowiskach <strong>Scratch</strong> oraz <strong>Minecraft Education Edition</strong></li>
@@ -330,19 +326,15 @@
     <!-- Wykształcenie -->
     <section class="page-section" id="education">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Wykształcenie</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
+            <h2 class="page-section-heading text-center text-secondary mb-0">Wykształcenie</h2>
+            <div class="divider-custom"><div class="divider-custom-line"></div></div>
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <div class="timeline">
                         <div class="timeline-item">
-                            <span class="timeline-date text-primary">2022 &ndash; 2026</span>
+                            <span class="timeline-date text-primary">2022 - 2026</span>
                             <h3 class="h4 timeline-title"><i class="fas fa-graduation-cap text-primary me-2"></i>Politechnika Lubelska</h3>
-                            <p class="timeline-role text-muted">Informatyka &mdash; tytuł inżyniera (obrona w 2026 roku)</p>
+                            <p class="timeline-role text-muted">Informatyka, specjalność: inżynieria oprogramowania - tytuł inżyniera (obrona w 2026 roku)</p>
                             <ul>
                                 <li><strong>Starosta grupy</strong> przez cały okres studiów</li>
                                 <li><strong>Lider wielu projektów</strong> zespołowych</li>
@@ -365,12 +357,8 @@
     <!-- Projekty i repozytoria -->
     <section class="page-section bg-secondary text-white" id="own-projects">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Projekty i repozytoria</h2>
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
+            <h2 class="page-section-heading text-center text-white mb-0">Projekty i repozytoria</h2>
+            <div class="divider-custom divider-light"><div class="divider-custom-line"></div></div>
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
                     <p class="lead">Projekty autorskie oraz projekty realizowane w ramach studiów na Politechnice Lubelskiej udostępniam publicznie na platformie GitHub. Znajdują się tam między innymi aplikacje w języku Python, gra 2D <strong>Mind of Seasons</strong> (Python / Pygame) z proceduralną generacją świata i systemem zapisu stanu, aplikacje wykorzystujące Discord API oraz serwisy internetowe.</p>
@@ -386,12 +374,8 @@
     <!-- Call to Action-->
     <section class="page-section bg-light text-center">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Kontakt</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
+            <h2 class="page-section-heading text-center text-secondary mb-0">Kontakt</h2>
+            <div class="divider-custom"><div class="divider-custom-line"></div></div>
             <p class="lead mb-5">Zapraszam do kontaktu w sprawie współpracy zawodowej lub realizacji projektu.</p>
             <div class="row justify-content-center">
                 <div class="col-lg-4 mb-4">
@@ -424,32 +408,38 @@
     </section>
 
     <!-- Footer-->
-    <footer class="footer text-center">
+    <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-0">
-                    <h4 class="text-uppercase mb-4">Kontakt</h4>
-                    <div class="contact-info mb-4">
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:kontakt@matif.pl">kontakt@matif.pl</a></p>
-                        <p><i class="fas fa-phone"></i> <span data-tel="MTE0NjM4MjA1ODQr">&hellip;</span></p>
-                        <p><i class="fas fa-map-marker-alt"></i> Obsługuję całą Polskę</p>
-                    </div>
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <img class="footer-logo" src="assets/img/matif-logo-light.png" alt="MatIf" width="600" height="177" />
+                    <p class="footer-legal mb-4">
+                        Usługi Informatyczne &bdquo;MatIf&rdquo; Mateusz Krupa<br />
+                        NIP: 7162851430
+                    </p>
                     <div class="social-icons">
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/mateusz-krupa-686998384/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/OldBeardMan"><i class="fab fa-fw fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social me-2" href="https://www.linkedin.com/in/mateusz-krupa-686998384/" aria-label="LinkedIn"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://github.com/OldBeardMan" aria-label="GitHub"><i class="fab fa-fw fa-github"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-8 text-center">
-                    <h3 class="mb-3 mt-3">MatIf</h3>
-                    <p class="small text-muted mb-2">Usługi Informatyczne &bdquo;MatIf&rdquo; Mateusz Krupa &bull; NIP: 7162851430</p>
-                    <p class="lead">
-                        Potrzebujesz kompleksowych usług IT dla swojej firmy? Dobrze trafiłeś!
-                    </p>
-                    <p class="lead">
-                        Od wsparcia helpdesk, przez tworzenie stron internetowych, po zaawansowane aplikacje na zamówienie
-                        &mdash; znajdziesz tu wszystko. Zobacz <a href="/portfolio">moje realizacje</a> i
-                        <a href="/kontakt">napisz do mnie</a>!
-                    </p>
+                <div class="col-lg-4 col-md-6">
+                    <h4>Kontakt</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:kontakt@matif.pl">kontakt@matif.pl</a></p>
+                        <p><i class="fas fa-phone"></i> <span data-tel="MTE0NjM4MjA1ODQr">&hellip;</span></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Obsługa zdalna na terenie całej Polski</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4>Zakres usług</h4>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="/oferta#aplikacje">Aplikacje na zamówienie</a></li>
+                        <li><a href="/oferta#web-development">Strony internetowe</a></li>
+                        <li><a href="/oferta#domeny-poczta">Domeny i poczta e-mail</a></li>
+                        <li><a href="/oferta#opieka">Opieka i utrzymanie IT</a></li>
+                        <li><a href="/oferta#sieci">Sieci komputerowe</a></li>
+                        <li><a href="/oferta#helpdesk">Wsparcie IT i helpdesk</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

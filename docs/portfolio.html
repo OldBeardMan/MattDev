@@ -19,17 +19,24 @@
     <link rel="canonical" href="https://matif.pl/portfolio">
     <title>Portfolio - MatIf</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <meta name="theme-color" content="#101828" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/matif.css" rel="stylesheet" />
 </head>
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand m-0" href="/">MatIf</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand m-0" href="/" aria-label="MatIf - strona główna">
+                <img class="brand-logo" src="assets/img/matif-logo-light.png" alt="MatIf" width="600" height="177" />
+                <span class="brand-tag">Usługi informatyczne</span>
+            </a>
+            <button class="navbar-toggler text-uppercase font-weight-bold text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -39,34 +46,27 @@
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/portfolio">Portfolio</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/faq">FAQ</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/kontakt">Kontakt</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link nav-cta" href="/kontakt">Bezpłatna wycena</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <h1 class="masthead-heading text-uppercase mb-0">Moje Portfolio</h1>
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <p class="masthead-subheading font-weight-light mb-0">Projekty, które zrealizowałem</p>
+    <header class="masthead masthead-page text-white">
+        <div class="container">
+            <h1 class="masthead-heading">Portfolio</h1>
+            <div class="divider-custom divider-light"><div class="divider-custom-line"></div></div>
+            <p class="masthead-subheading mb-0">Wybrane projekty zrealizowane dla klientów i na potrzeby własne.</p>
         </div>
     </header>
 
     <!-- Aplikacje energetyczne -->
     <section class="page-section bg-light" id="energy-apps">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Aplikacje energetyczne</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <p class="lead text-center mb-5">Aplikacje stworzone w ramach pracy w sektorze energetycznym &mdash; przy bateryjnych magazynach energii i instalacjach odnawialnego amoniaku. Projekty wewnętrzne, kod źródłowy objęty poufnością.</p>
+            <h2 class="page-section-heading text-center text-secondary mb-0">Aplikacje energetyczne</h2>
+            <div class="divider-custom"><div class="divider-custom-line"></div></div>
+            <p class="lead text-center lead-narrow mb-5">Aplikacje stworzone w ramach pracy w sektorze energetycznym - przy bateryjnych magazynach energii i instalacjach odnawialnego amoniaku. Projekty wewnętrzne, kod źródłowy objęty poufnością.</p>
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card h-100 text-center bg-white shadow">
@@ -74,7 +74,7 @@
                             <i class="fas fa-battery-full fa-3x mb-3 text-primary"></i>
                             <h5 class="card-title">Symulator i optymalizator BESS</h5>
                             <hr>
-                            <p class="card-text">Algorytmy symulacji i optymalizacji pracy bateryjnego magazynu energii (Battery Energy Storage System) &mdash; modelowanie cykli ładowania i rozładowania, analiza wydajności i wsparcie decyzji operacyjnych.</p>
+                            <p class="card-text">Algorytmy symulacji i optymalizacji pracy bateryjnego magazynu energii (Battery Energy Storage System) - modelowanie cykli ładowania i rozładowania, analiza wydajności i wsparcie decyzji operacyjnych.</p>
                             <span class="badge bg-dark">Python</span>
                             <span class="badge bg-dark">C++</span>
                         </div>
@@ -97,7 +97,7 @@
                             <i class="fas fa-gauge-high fa-3x mb-3 text-primary"></i>
                             <h5 class="card-title">Interfejsy monitoringu na żywo</h5>
                             <hr>
-                            <p class="card-text">Interfejsy scalające aplikacje do obserwowania pracy magazynu energii w czasie rzeczywistym &mdash; jeden pulpit zbierający dane z wielu systemów.</p>
+                            <p class="card-text">Interfejsy scalające aplikacje do obserwowania pracy magazynu energii w czasie rzeczywistym - jeden pulpit zbierający dane z wielu systemów.</p>
                             <span class="badge bg-dark">Python</span>
                             <span class="badge bg-dark">JavaScript</span>
                             <span class="badge bg-dark">HTML / CSS</span>
@@ -110,7 +110,7 @@
                             <i class="fas fa-cloud-sun-rain fa-3x mb-3 text-primary"></i>
                             <h5 class="card-title">Pipeline danych pogodowych</h5>
                             <hr>
-                            <p class="card-text">Skrypty pobierające dane pogodowe z zewnętrznych API i zapisujące je w bazie PostgreSQL &mdash; dane wejściowe do prognoz produkcji i symulacji pracy magazynu.</p>
+                            <p class="card-text">Skrypty pobierające dane pogodowe z zewnętrznych API i zapisujące je w bazie PostgreSQL - dane wejściowe do prognoz produkcji i symulacji pracy magazynu.</p>
                             <span class="badge bg-dark">Python</span>
                             <span class="badge bg-dark">REST API</span>
                             <span class="badge bg-dark">PostgreSQL</span>
@@ -123,7 +123,7 @@
                             <i class="fas fa-satellite-dish fa-3x mb-3 text-primary"></i>
                             <h5 class="card-title">Akwizycja danych z budowy</h5>
                             <hr>
-                            <p class="card-text">Automatyczne pobieranie danych pomiarowych z terenu budowy instalacji &mdash; zbieranie, walidacja i składowanie pomiarów bez ręcznej pracy zespołu.</p>
+                            <p class="card-text">Automatyczne pobieranie danych pomiarowych z terenu budowy instalacji - zbieranie, walidacja i składowanie pomiarów bez ręcznej pracy zespołu.</p>
                             <span class="badge bg-dark">Python</span>
                             <span class="badge bg-dark">PostgreSQL</span>
                         </div>
@@ -135,7 +135,7 @@
                             <i class="fas fa-robot fa-3x mb-3 text-primary"></i>
                             <h5 class="card-title">Automatyzacja pracy zespołu</h5>
                             <hr>
-                            <p class="card-text">Aplikacje i skrypty wspierające codzienną pracę zespołu inżynierskiego &mdash; automatyzacja powtarzalnych zadań, przetwarzanie danych i generowanie raportów.</p>
+                            <p class="card-text">Aplikacje i skrypty wspierające codzienną pracę zespołu inżynierskiego - automatyzacja powtarzalnych zadań, przetwarzanie danych i generowanie raportów.</p>
                             <span class="badge bg-dark">Python</span>
                             <span class="badge bg-dark">PostgreSQL</span>
                         </div>
@@ -151,12 +151,8 @@
     <!-- Strony internetowe -->
     <section class="page-section bg-secondary portfolio" id="websites">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Strony internetowe</h2>
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
+            <h2 class="page-section-heading text-center text-white mb-0">Strony internetowe</h2>
+            <div class="divider-custom divider-light"><div class="divider-custom-line"></div></div>
             <div class="row justify-content-center">
                 <!-- mattkrupa.net -->
                 <div class="col-md-6 col-lg-4 mb-5">
@@ -184,12 +180,8 @@
     <!-- Aplikacje i gry -->
     <section class="page-section portfolio" id="apps-games">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Aplikacje i gry</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
+            <h2 class="page-section-heading text-center text-secondary mb-0">Aplikacje i gry</h2>
+            <div class="divider-custom"><div class="divider-custom-line"></div></div>
             <div class="row justify-content-center">
                 <!-- Mind of Seasons -->
                 <div class="col-md-6 col-lg-4 mb-5">
@@ -235,15 +227,11 @@
     </section>
 
     <!-- CTA -->
-    <section class="page-section text-center">
+    <section class="page-section bg-light text-center">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Masz pomysł na projekt?</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <p class="lead mb-4">Szukasz kogoś, kto zrealizuje Twój projekt IT? Skontaktuj się ze mną &mdash; chętnie porozmawiam o Twoich potrzebach.</p>
+            <h2 class="page-section-heading text-center text-secondary mb-0">Masz pomysł na projekt?</h2>
+            <div class="divider-custom"><div class="divider-custom-line"></div></div>
+            <p class="lead mb-4">Szukasz kogoś, kto zrealizuje Twój projekt IT? Skontaktuj się ze mną - chętnie porozmawiam o Twoich potrzebach.</p>
             <a class="btn btn-xl btn-primary" href="/kontakt"><i class="fas fa-envelope me-2"></i>Skontaktuj się</a>
         </div>
     </section>
@@ -257,12 +245,8 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">mattkrupa.net</h2>
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
+                                <h2 class="portfolio-modal-title text-secondary mb-0">mattkrupa.net</h2>
+                                <div class="divider-custom"><div class="divider-custom-line"></div></div>
                                 <a href="https://www.mattkrupa.net/" target="_blank"><img class="img-fluid rounded mb-5" src="assets/img/portfolio/mattkrupa.png" alt="mattkrupa.net" /></a>
                                 <ul class="list-unstyled">
                                     <li><i class="fas fa-file-alt text-primary"></i> 11 podstron <span class="separator"></span> <i class="fas fa-mobile-alt text-primary"></i> Wersja mobilna</li>
@@ -270,7 +254,7 @@
                                     <li><i class="fas fa-music text-primary"></i> Odtwarzacz muzyki <span class="separator"></span> <i class="fas fa-images text-primary"></i> Galeria zdjęć</li>
                                     <li><i class="fas fa-gamepad text-primary"></i> Podstrona gry Mind of Seasons <span class="separator"></span> <i class="fas fa-blog text-primary"></i> Blog z aktualnościami</li>
                                 </ul>
-                                <p class="mb-4">Strona muzyczna artysty Matt Krupa, tworzącego muzykę ambientową, elektroniczną i akustyczną. Strona prezentuje albumy, aktualności, blog oraz podstronę gry Mind of Seasons &mdash; interaktywnej gry, w której każdy album ożywa jako grywalny świat. Kolorowy, autorski design z animacjami. Hostowana na GitHub Pages.</p>
+                                <p class="mb-4">Strona muzyczna artysty Matt Krupa, tworzącego muzykę ambientową, elektroniczną i akustyczną. Strona prezentuje albumy, aktualności, blog oraz podstronę gry Mind of Seasons - interaktywnej gry, w której każdy album ożywa jako grywalny świat. Kolorowy, autorski design z animacjami. Hostowana na GitHub Pages.</p>
                                 <button class="btn btn-primary d-inline" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i>Zamknij</button>
                                 <button class="btn btn-primary d-inline" onclick="window.open('https://www.mattkrupa.net', '_blank')"><i class="fas fa-globe fa-fw"></i>Zobacz stronę</button>
                             </div>
@@ -290,12 +274,8 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">depclean.pl</h2>
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
+                                <h2 class="portfolio-modal-title text-secondary mb-0">depclean.pl</h2>
+                                <div class="divider-custom"><div class="divider-custom-line"></div></div>
                                 <div class="alert alert-secondary" role="alert">
                                     <i class="fas fa-circle-info me-2"></i><strong>Strona nie jest już aktywna.</strong> Poniższy zrzut ekranu dokumentuje zrealizowany projekt.
                                 </div>
@@ -327,12 +307,8 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Mind of Seasons</h2>
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Mind of Seasons</h2>
+                                <div class="divider-custom"><div class="divider-custom-line"></div></div>
                                 <img class="img-fluid rounded mb-5" src="assets/img/portfolio/mindofseasons.png" alt="Mind of Seasons" />
                                 <ul class="list-unstyled">
                                     <li><i class="fas fa-gamepad text-primary"></i> Gra 2D <span class="separator"></span> <i class="fas fa-cat text-primary"></i> Szukanie zagubionych kotków</li>
@@ -361,19 +337,15 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Vibe Tuner</h2>
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Vibe Tuner</h2>
+                                <div class="divider-custom"><div class="divider-custom-line"></div></div>
                                 <!-- PODMIEŃ: dodaj screenshot jako assets/img/portfolio/vibetuner.jpg i odkomentuj img poniżej -->
                                 <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/vibetuner.jpg" alt="Vibe Tuner" /> -->
                                 <i class="fas fa-face-smile fa-5x mb-4 text-primary"></i>
                                 <ul class="list-unstyled">
                                     <li><i class="fas fa-camera text-primary"></i> Wykrywanie emocji ze zdjęcia twarzy <span class="separator"></span> <i class="fas fa-music text-primary"></i> Dobór muzyki do emocji</li>
                                     <li><i class="fas fa-clock-rotate-left text-primary"></i> Historia emocji <span class="separator"></span> <i class="fas fa-chart-line text-primary"></i> Analityka emocji w czasie</li>
-                                    <li><i class="fas fa-code text-primary"></i> Python <span class="separator"></span> <i class="fas fa-graduation-cap text-primary"></i> Praca inżynierska &mdash; Politechnika Lubelska</li>
+                                    <li><i class="fas fa-code text-primary"></i> Python <span class="separator"></span> <i class="fas fa-graduation-cap text-primary"></i> Praca inżynierska - Politechnika Lubelska</li>
                                 </ul>
                                 <p class="mb-4"><strong>Vibe Tuner</strong> to aplikacja, którą wykonałem jako pracę inżynierską na Politechnice Lubelskiej. Na podstawie zdjęcia twarzy rozpoznaje emocje użytkownika i automatycznie dobiera do nich odpowiednią muzykę. Aplikacja zapisuje historię wykrytych emocji i udostępnia moduł analityczny, który pokazuje, jak nastrój zmieniał się w czasie.</p>
                                 <button class="btn btn-primary d-inline" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i>Zamknij</button>
@@ -395,12 +367,8 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Discord Boty</h2>
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
+                                <h2 class="portfolio-modal-title text-secondary mb-0">Discord Boty</h2>
+                                <div class="divider-custom"><div class="divider-custom-line"></div></div>
                                 <!-- PODMIEŃ: dodaj screenshot jako assets/img/portfolio/discordbots.jpg i odkomentuj img poniżej -->
                                 <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/discordbots.jpg" alt="Discord Boty" /> -->
                                 <i class="fas fa-robot fa-5x mb-4 text-primary"></i>
@@ -410,8 +378,8 @@
                                     <li><i class="fas fa-arrow-up text-primary"></i> System levelingu i XP</li>
                                     <li><i class="fas fa-code text-primary"></i> Python / Discord API</li>
                                 </ul>
-                                <p class="mb-4"><strong>Minecraft-Discord Bridge</strong> &mdash; bot łączący chat Minecrafta Beta 1.7.3 z Discordem. Przekazuje wiadomości, eventy dołączania/wychodzenia graczy i pozwala pisać z Discorda do gry. Integracja przez GNU screen.</p>
-                                <p class="mb-4"><strong>Music Bot</strong> &mdash; bot Discord odtwarzający muzykę na kanałach głosowych, z systemem levelingu użytkowników (XP za aktywność) i losowymi zdjęciami kota.</p>
+                                <p class="mb-4"><strong>Minecraft-Discord Bridge</strong> - bot łączący chat Minecrafta Beta 1.7.3 z Discordem. Przekazuje wiadomości, eventy dołączania/wychodzenia graczy i pozwala pisać z Discorda do gry. Integracja przez GNU screen.</p>
+                                <p class="mb-4"><strong>Music Bot</strong> - bot Discord odtwarzający muzykę na kanałach głosowych, z systemem levelingu użytkowników (XP za aktywność) i losowymi zdjęciami kota.</p>
                                 <button class="btn btn-primary d-inline" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i>Zamknij</button>
                                 <a class="btn btn-primary d-inline" href="https://github.com/OldBeardMan/minecraft-beta-1.7.3-discord-bridge" target="_blank"><i class="fab fa-github fa-fw"></i>MC Bridge</a>
                                 <a class="btn btn-primary d-inline" href="https://github.com/OldBeardMan/musicBot" target="_blank"><i class="fab fa-github fa-fw"></i>Music Bot</a>
@@ -424,31 +392,38 @@
     </div>
 
     <!-- Footer-->
-    <footer class="footer text-center">
+    <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-0">
-                    <h4 class="text-uppercase mb-4">Kontakt</h4>
-                    <div class="contact-info mb-4">
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:kontakt@matif.pl">kontakt@matif.pl</a></p>
-                        <p><i class="fas fa-phone"></i> <span data-tel="MTE0NjM4MjA1ODQr">&hellip;</span></p>
-                        <p><i class="fas fa-map-marker-alt"></i> Obsługuję całą Polskę</p>
-                    </div>
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <img class="footer-logo" src="assets/img/matif-logo-light.png" alt="MatIf" width="600" height="177" />
+                    <p class="footer-legal mb-4">
+                        Usługi Informatyczne &bdquo;MatIf&rdquo; Mateusz Krupa<br />
+                        NIP: 7162851430
+                    </p>
                     <div class="social-icons">
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/mateusz-krupa-686998384/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/OldBeardMan"><i class="fab fa-fw fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social me-2" href="https://www.linkedin.com/in/mateusz-krupa-686998384/" aria-label="LinkedIn"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://github.com/OldBeardMan" aria-label="GitHub"><i class="fab fa-fw fa-github"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-8 text-center">
-                    <h3 class="mb-3 mt-3">MatIf</h3>
-                    <p class="small text-muted mb-2">Usługi Informatyczne &bdquo;MatIf&rdquo; Mateusz Krupa &bull; NIP: 7162851430</p>
-                    <p class="lead">
-                        Potrzebujesz kompleksowych usług IT dla swojej firmy? Dobrze trafiłeś!
-                    </p>
-                    <p class="lead">
-                        Od wsparcia helpdesk, przez tworzenie stron internetowych, po zaawansowane aplikacje na zamówienie
-                        &mdash; znajdziesz tu wszystko. <a href="/kontakt">Napisz do mnie</a>!
-                    </p>
+                <div class="col-lg-4 col-md-6">
+                    <h4>Kontakt</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:kontakt@matif.pl">kontakt@matif.pl</a></p>
+                        <p><i class="fas fa-phone"></i> <span data-tel="MTE0NjM4MjA1ODQr">&hellip;</span></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Obsługa zdalna na terenie całej Polski</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4>Zakres usług</h4>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="/oferta#aplikacje">Aplikacje na zamówienie</a></li>
+                        <li><a href="/oferta#web-development">Strony internetowe</a></li>
+                        <li><a href="/oferta#domeny-poczta">Domeny i poczta e-mail</a></li>
+                        <li><a href="/oferta#opieka">Opieka i utrzymanie IT</a></li>
+                        <li><a href="/oferta#sieci">Sieci komputerowe</a></li>
+                        <li><a href="/oferta#helpdesk">Wsparcie IT i helpdesk</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

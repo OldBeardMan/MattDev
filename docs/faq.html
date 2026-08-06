@@ -19,17 +19,24 @@
     <link rel="canonical" href="https://matif.pl/faq">
     <title>FAQ - MatIf</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <meta name="theme-color" content="#101828" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/matif.css" rel="stylesheet" />
 </head>
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand m-0" href="/">MatIf</a>
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand m-0" href="/" aria-label="MatIf - strona główna">
+                <img class="brand-logo" src="assets/img/matif-logo-light.png" alt="MatIf" width="600" height="177" />
+                <span class="brand-tag">Usługi informatyczne</span>
+            </a>
+            <button class="navbar-toggler text-uppercase font-weight-bold text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -39,21 +46,18 @@
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/portfolio">Portfolio</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/faq">FAQ</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="/kontakt">Kontakt</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link nav-cta" href="/kontakt">Bezpłatna wycena</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <h1 class="masthead-heading text-uppercase mb-0">FAQ</h1>
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <p class="masthead-subheading font-weight-light mb-0">Najczęściej zadawane pytania</p>
+    <header class="masthead masthead-page text-white">
+        <div class="container">
+            <h1 class="masthead-heading">FAQ</h1>
+            <div class="divider-custom divider-light"><div class="divider-custom-line"></div></div>
+            <p class="masthead-subheading mb-0">Odpowiedzi na pytania, które pojawiają się najczęściej przed rozpoczęciem współpracy.</p>
         </div>
     </header>
 
@@ -109,7 +113,7 @@
                     </h2>
                     <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Strona internetowa to wizytówka Twojej firmy w sieci &mdash; prezentuje informacje, ofertę i umożliwia kontakt. Aplikacja na zamówienie to dedykowane oprogramowanie z zaawansowaną logiką biznesową, np. system zarządzania, optymalizator procesów, narzędzie analityczne czy aplikacja mobilna. Aplikacje rozwiązują konkretne problemy biznesowe.
+                            Strona internetowa to wizytówka Twojej firmy w sieci - prezentuje informacje, ofertę i umożliwia kontakt. Aplikacja na zamówienie to dedykowane oprogramowanie z zaawansowaną logiką biznesową, np. system zarządzania, optymalizator procesów, narzędzie analityczne czy aplikacja mobilna. Aplikacje rozwiązują konkretne problemy biznesowe.
                         </div>
                     </div>
                 </div>
@@ -122,7 +126,7 @@
                     </h2>
                     <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Głównie pracuję z Pythonem (Django, Flask, FastAPI), C++, JavaScript (HTML, CSS, Bootstrap) oraz Dockerem. Do zarządzania infrastrukturą korzystam z narzędzi administracyjnych Linux i Windows Server. Technologię dobieram do konkretnego projektu &mdash; nie forsuję jednego rozwiązania na siłę.
+                            Głównie pracuję z Pythonem (Django, Flask, FastAPI), C++, JavaScript (HTML, CSS, Bootstrap) oraz Dockerem. Do zarządzania infrastrukturą korzystam z narzędzi administracyjnych Linux i Windows Server. Technologię dobieram do konkretnego projektu - nie forsuję jednego rozwiązania na siłę.
                         </div>
                     </div>
                 </div>
@@ -135,7 +139,7 @@
                     </h2>
                     <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Czas realizacji zależy od złożoności projektu. Prosta strona wizytówkowa to zazwyczaj 7-14 dni, bardziej rozbudowany projekt z blogiem czy portfolio &mdash; 2-4 tygodnie. Aplikacje na zamówienie wymagają więcej czasu, w zależności od wymagań.
+                            Czas realizacji zależy od złożoności projektu. Prosta strona wizytówkowa to zazwyczaj 7-14 dni, bardziej rozbudowany projekt z blogiem czy portfolio - 2-4 tygodnie. Aplikacje na zamówienie wymagają więcej czasu, w zależności od wymagań.
                         </div>
                     </div>
                 </div>
@@ -148,7 +152,7 @@
                     </h2>
                     <div id="faqCollapse7" class="accordion-collapse collapse" aria-labelledby="faqHeading7" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Każdy projekt wyceniam indywidualnie na podstawie wymagań i złożoności. <a href="/kontakt" class="text-primary">Skontaktuj się ze mną</a>, opisz czego potrzebujesz, a przygotuję bezpłatną wycenę.
+                            Ceny stron internetowych, domen z pocztą oraz stałej opieki znajdziesz w <a href="/oferta#web-development" class="text-primary">cenniku w ofercie</a>. Sieci, wsparcie IT i aplikacje na zamówienie wyceniam indywidualnie, bo zakres prac jest za każdym razem inny - <a href="/kontakt" class="text-primary">opisz, czego potrzebujesz</a>, a przygotuję bezpłatną wycenę.
                         </div>
                     </div>
                 </div>
@@ -209,14 +213,10 @@
     </section>
 
     <!-- Contact Section-->
-    <section class="page-section" id="contact">
+    <section class="page-section bg-light" id="contact">
         <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Nie ma odpowiedzi na Twoje pytanie? Napisz do mnie!</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
+            <h2 class="page-section-heading text-center text-secondary mb-0">Nie znalazłeś odpowiedzi?</h2>
+            <div class="divider-custom"><div class="divider-custom-line"></div></div>
             <div class="row justify-content-center">
                 <div class="col-lg-4">
                     <div class="card bg-matt mb-3">
@@ -255,7 +255,7 @@
                             <label class="form-label">Wiadomość<span class="text-danger">*</span></label>
                             <textarea name="message" class="form-control" rows="5" placeholder="Twoja wiadomość..." required></textarea>
                         </div>
-                        <button class="btn btn-secondary btn-xl" id="submitButton" type="submit">Wyślij</button>
+                        <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Wyślij wiadomość</button>
                     </form>
                 </div>
             </div>
@@ -263,32 +263,38 @@
     </section>
 
     <!-- Footer-->
-    <footer class="footer text-center">
+    <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-0">
-                    <h4 class="text-uppercase mb-4">Kontakt</h4>
-                    <div class="contact-info mb-4">
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:kontakt@matif.pl">kontakt@matif.pl</a></p>
-                        <p><i class="fas fa-phone"></i> <span data-tel="MTE0NjM4MjA1ODQr">&hellip;</span></p>
-                        <p><i class="fas fa-map-marker-alt"></i> Obsługuję całą Polskę</p>
-                    </div>
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <img class="footer-logo" src="assets/img/matif-logo-light.png" alt="MatIf" width="600" height="177" />
+                    <p class="footer-legal mb-4">
+                        Usługi Informatyczne &bdquo;MatIf&rdquo; Mateusz Krupa<br />
+                        NIP: 7162851430
+                    </p>
                     <div class="social-icons">
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/mateusz-krupa-686998384/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/OldBeardMan"><i class="fab fa-fw fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social me-2" href="https://www.linkedin.com/in/mateusz-krupa-686998384/" aria-label="LinkedIn"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://github.com/OldBeardMan" aria-label="GitHub"><i class="fab fa-fw fa-github"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-8 text-center">
-                    <h3 class="mb-3 mt-3">MatIf</h3>
-                    <p class="small text-muted mb-2">Usługi Informatyczne &bdquo;MatIf&rdquo; Mateusz Krupa &bull; NIP: 7162851430</p>
-                    <p class="lead">
-                        Potrzebujesz kompleksowych usług IT dla swojej firmy? Dobrze trafiłeś!
-                    </p>
-                    <p class="lead">
-                        Od wsparcia helpdesk, przez tworzenie stron internetowych, po zaawansowane aplikacje na zamówienie
-                        &mdash; znajdziesz tu wszystko. Zobacz <a href="/portfolio">moje realizacje</a> i
-                        <a href="/kontakt">napisz do mnie</a>!
-                    </p>
+                <div class="col-lg-4 col-md-6">
+                    <h4>Kontakt</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:kontakt@matif.pl">kontakt@matif.pl</a></p>
+                        <p><i class="fas fa-phone"></i> <span data-tel="MTE0NjM4MjA1ODQr">&hellip;</span></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Obsługa zdalna na terenie całej Polski</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4>Zakres usług</h4>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="/oferta#aplikacje">Aplikacje na zamówienie</a></li>
+                        <li><a href="/oferta#web-development">Strony internetowe</a></li>
+                        <li><a href="/oferta#domeny-poczta">Domeny i poczta e-mail</a></li>
+                        <li><a href="/oferta#opieka">Opieka i utrzymanie IT</a></li>
+                        <li><a href="/oferta#sieci">Sieci komputerowe</a></li>
+                        <li><a href="/oferta#helpdesk">Wsparcie IT i helpdesk</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

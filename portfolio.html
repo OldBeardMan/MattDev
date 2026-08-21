@@ -154,6 +154,15 @@
             <h2 class="page-section-heading text-center text-white mb-0">Strony internetowe</h2>
             <div class="divider-custom divider-light"><div class="divider-custom-line"></div></div>
             <div class="row justify-content-center">
+                <!-- tkdt.pl -->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#modalTkdt">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/tkdt.jpg" alt="tkdt.pl" />
+                    </div>
+                </div>
                 <!-- mattkrupa.net -->
                 <div class="col-md-6 col-lg-4 mb-5">
                     <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#modalMattkrupa">
@@ -235,6 +244,37 @@
             <a class="btn btn-xl btn-primary" href="/kontakt"><i class="fas fa-envelope me-2"></i>Skontaktuj się</a>
         </div>
     </section>
+
+    <!-- Modal: tkdt.pl -->
+    <div class="portfolio-modal modal fade" id="modalTkdt" tabindex="-1" aria-labelledby="modalTkdt" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="portfolio-modal-title text-secondary mb-0">tkdt.pl</h2>
+                                <div class="divider-custom"><div class="divider-custom-line"></div></div>
+                                <a href="https://tkdt.pl/" target="_blank"><img class="img-fluid rounded mb-5" src="assets/img/portfolio/tkdt.jpg" alt="tkdt.pl - Tomasz Krupa Doradztwo Techniczne" /></a>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-language text-primary"></i> Dwie wersje językowe: polska i angielska <span class="separator"></span> <i class="fas fa-mobile-alt text-primary"></i> Wersja mobilna</li>
+                                    <li><i class="fas fa-envelope-open-text text-primary"></i> Formularz kontaktowy z wysyłką e-mail <span class="separator"></span> <i class="fas fa-shield-halved text-primary"></i> Ochrona przed spamem</li>
+                                    <li><i class="fas fa-table-list text-primary"></i> Tabela 24 referencji <span class="separator"></span> <i class="fas fa-phone-slash text-primary"></i> Numer telefonu ukryty przed botami</li>
+                                    <li><i class="fas fa-magnifying-glass-chart text-primary"></i> Optymalizacja SEO i dane strukturalne <span class="separator"></span> <i class="fas fa-lock text-primary"></i> Certyfikat SSL</li>
+                                    <li><i class="fas fa-cloud text-primary"></i> Wdrożenie na Cloudflare <span class="separator"></span> <i class="fas fa-universal-access text-primary"></i> Dostępność (WCAG)</li>
+                                </ul>
+                                <p class="mb-4">Strona wizytówka dla <strong>Tomasz Krupa Doradztwo Techniczne (TKDT)</strong> - firmy doradczej działającej w przemyśle chemicznym, energetycznym oraz w sektorze OZE i wodoru. Powściągliwy, typograficzny układ jednostronicowy prowadzi czytelnika od zakresu usług, przez podejście firmy, aż po tabelę zrealizowanych projektów i formularz zapytania ofertowego.</p>
+                                <p class="mb-4">Serwis jest w pełni dwujęzyczny - polski i angielski - z autorskim mechanizmem tłumaczeń przełączającym treść bez przeładowania strony. Formularz kontaktowy obsługuje własny endpoint po stronie serwera, zabezpieczony zestawem mechanizmów antyspamowych. Całość wdrożyłem w infrastrukturze Cloudflare, wraz z konfiguracją nagłówków bezpieczeństwa i zasad buforowania.</p>
+                                <button class="btn btn-primary d-inline" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i>Zamknij</button>
+                                <button class="btn btn-primary d-inline" onclick="window.open('https://tkdt.pl', '_blank')"><i class="fas fa-globe fa-fw"></i>Zobacz stronę</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal: mattkrupa.net -->
     <div class="portfolio-modal modal fade" id="modalMattkrupa" tabindex="-1" aria-labelledby="modalMattkrupa" aria-hidden="true">

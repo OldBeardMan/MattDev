@@ -1,33 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://matif.pl/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://matif.pl/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://matif.pl/pl/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://matif.pl/"/>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://matif.pl/oferta</loc>
+        <loc>https://matif.pl/pl/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://matif.pl/"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://matif.pl/pl/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://matif.pl/"/>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://matif.pl/portfolio</loc>
+        <loc>https://matif.pl/services</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://matif.pl/services"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://matif.pl/pl/oferta"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://matif.pl/services"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://matif.pl/pl/oferta</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://matif.pl/services"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://matif.pl/pl/oferta"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://matif.pl/services"/>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://matif.pl/kontakt</loc>
+        <loc>https://matif.pl/about</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://matif.pl/about"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://matif.pl/pl/omnie"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://matif.pl/about"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://matif.pl/pl/omnie</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://matif.pl/about"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://matif.pl/pl/omnie"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://matif.pl/about"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://matif.pl/portfolio</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://matif.pl/portfolio"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://matif.pl/pl/portfolio"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://matif.pl/portfolio"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://matif.pl/pl/portfolio</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://matif.pl/portfolio"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://matif.pl/pl/portfolio"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://matif.pl/portfolio"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://matif.pl/faq</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://matif.pl/faq"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://matif.pl/pl/faq"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://matif.pl/faq"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://matif.pl/pl/faq</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://matif.pl/faq"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://matif.pl/pl/faq"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://matif.pl/faq"/>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://matif.pl/contact</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://matif.pl/contact"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://matif.pl/pl/kontakt"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://matif.pl/contact"/>
         <changefreq>yearly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://matif.pl/omnie</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://matif.pl/faq</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <loc>https://matif.pl/pl/kontakt</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://matif.pl/contact"/>
+        <xhtml:link rel="alternate" hreflang="pl" href="https://matif.pl/pl/kontakt"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://matif.pl/contact"/>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
     </url>
 </urlset>

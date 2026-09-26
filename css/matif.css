@@ -242,6 +242,15 @@ a { text-decoration-thickness: 1px; text-underline-offset: 0.15em; }
   }
 }
 
+/* Przełącznik języka EN / PL */
+#mainNav .navbar-nav li.nav-item a.nav-link.nav-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  letter-spacing: 0.08em;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link.nav-lang i { font-size: 0.85em; opacity: 0.8; }
+
 #mainNav .navbar-toggler {
   background-color: transparent !important;
   border: 1px solid rgba(255, 255, 255, 0.25);
